@@ -1,0 +1,317 @@
+:root {
+  --pop-color: #007bff;
+  }
+
+@font-face{font-family:'logo'; src:url(../fonts/font/MeriendaOne-Regular.ttf);}
+@font-face{font-family:'pop'; src:url(../fonts/font/Poppins-Regular.ttf);}
+@font-face{font-family:'balo'; src:url(../fonts/font/BalooChettan.ttf);}
+@font-face{font-family:'jose'; src:url(../fonts/font/JosefinSans.ttf);}
+@font-face{font-family:'tenor'; src:url(../fonts/font/TenorSans-Regular.ttf);}
+@font-face{font-family:'made'; src:url(../fonts/font/DancingScript-Regular.ttf);}
+@font-face{font-family:'rrr'; src:url(../fonts/font/OleoScript-Regular.ttf);}
+*{box-sizing: border-box;}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/join-background.jpg);
+   background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    position: relative;
+
+}
+.btn-info {
+    color: #fff;
+    background-color: #2196f3;
+    border-color: #17a2b8;
+        padding: 13px 35px;
+}
+
+.form1{
+    position: relative;
+}
+.form2{
+    position: relative;
+}
+.form3{
+    position: relative;
+}
+.form1 .box1{
+    position: absolute;
+        top: -519px;
+    left: 282px;
+    background: #ADD;
+    margin-top: 42px;
+    z-index: 3;
+    padding: 50px;
+    display: none;
+}
+
+
+.form2 .box2{
+    position: absolute;
+        top: -519px;
+    left: -100px;
+    background: #ADD;
+    margin-top: 42px;
+    z-index: 3;
+    padding: 50px;
+    display: none;
+}
+.form3 .box3{
+    position: absolute;
+        top: -519px;
+    left: 282px;
+    background: #ADD;
+    margin-top: 42px;
+    z-index: 3;
+    padding: 50px;
+    display: none;
+}
+.ex .up{
+    margin: 0 auto;
+}
+
+
+
+.custom-select {
+ border-radius: 0;
+    padding: 0px;
+    font-size: 13px;
+}
+.register ul {
+    text-align: justify;
+    /* margin: 0 auto; */
+    position: absolute;
+    top: 17px;
+    left: 32%;
+    /* margin: 30px 20px; */
+    /* padding: 20px 30px; */
+}
+
+.register ul  li{
+    padding-left: 20px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #41b3c5;
+    /* padding-left: 47px; */
+    text-align: center;
+}
+.nav-pills .nav-link.active:hover{
+    background: linear-gradient(
+172deg
+, #43440fbf, transparent);
+}
+
+.register  .nav-link{
+   font-size: 20px;
+    color: #000000;
+        border-radius: 22px;
+}
+
+
+.register{
+   text-align: start;
+    position: absolute;
+    top: 45px;
+           background: linear-gradient(
+181deg
+, #1fa08a, #84353500);
+    padding: 20px 20px;
+    border-radius: 62px;
+    box-shadow: 2px 6px #ffffff;
+}
+.register h2{
+    font-family: 'balo';
+}
+
+.register input{
+    font-size: 16px;
+}
+
+.register label{
+    font-size: 14px;
+    color:#0000009c;
+
+}
+
+.register .form-group{
+    margin-top: 10px;
+}
+
+.form1{
+    position: relative;
+}
+.form2{
+    position: relative;
+}
+.form3{
+    position: relative;
+}
+
+.login .form-control, .register .form-control {
+    border: 0;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    font-size: 17px;
+}
+.register .se{
+   
+}
+.register .se input{
+ margin-left: 20px;
+}
+
+.register .re input{
+ margin-left: 20px;
+}
+
+.register .re{
+    text-align: center;
+       margin-top: 49px;
+    margin-left: 50px;
+   
+    color:#0000009c;
+}
+.register .two{
+    margin-left: 200px;
+}
+
+
+.register select{
+    font-size: 17px;
+
+}
+
+
+.register button{
+    text-align: center;
+    margin-top: 20px;
+       width: 200px;
+    font-family: 'balo';
+    padding: 10px 20px;
+    font-size: 20px;
+          background-image: linear-gradient(to right, #73ebec , #7676e4);
+}
+.register .send{
+    text-align: center;
+    align-items: center;
+}
+
+.register .year{
+    
+}
+
+.register button:focus{
+    box-shadow: none;
+}
+
+.register .send .sub{
+    padding-top: 15px;
+       font-size: 26px;
+    font-family: 'logo';
+}
+
+.register .back{
+        margin: 0 auto;
+    padding-top: 14px;
+
+    font-size: 17px;
+
+}
+.register .back a{
+    color: #000000;
+}
+
+
+
+                       /******************************* sign up as employee *****************************/
+
+
+
+
+
+
+
+
+
+
+.sign {
+  width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.sign  form{
+ margin: 0 auto;
+    padding:50px;
+    
+    background:#AEE8E4;
+    text-align: center;
+}
+
+.sign  form input{
+    
+    color:#ffffff;
+    border:2px solid var(--main-bg);
+    margin: 20px auto;
+    background: #FFAD32;
+    text-align: center;
+    transition: 0.5s;
+    padding: 15px 10px;
+    border-radius: 25px ;
+    outline: none;
+    margin-right: 20px;
+        width: 100%;
+    text-transform: uppercase;
+}
+.sign  form h1{
+ color:#77BD8B;
+    font-family: 'logo';
+    
+}
+ .sign form input:focus{
+    border 2px solid #3498db;
+         box-shadow: 0;
+}
+.sign form a.sign{
+    margin: 0 auto;
+       border-radius: 22px;
+    padding: 7px 40px;
+    font-family: cursive;
+}
+.sign form button:hover{
+    background-color: var(--main-bg);
+    border:0;
+} 
+.sign p{
+    color: #ffffff;
+}
+
+.sign p a{
+padding-left: 10px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

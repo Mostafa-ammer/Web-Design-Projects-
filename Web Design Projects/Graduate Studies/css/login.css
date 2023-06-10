@@ -1,0 +1,89 @@
+root {
+  --pop-color: #007bff;
+  }
+
+@font-face{font-family:'logo'; src:url(../fonts/font/MeriendaOne-Regular.ttf);}
+@font-face{font-family:'pop'; src:url(../fonts/font/Poppins-Regular.ttf);}
+@font-face{font-family:'balo'; src:url(../fonts/font/BalooChettan.ttf);}
+@font-face{font-family:'jose'; src:url(../fonts/font/JosefinSans.ttf);}
+@font-face{font-family:'tenor'; src:url(../fonts/font/TenorSans-Regular.ttf);}
+@font-face{font-family:'made'; src:url(../fonts/font/DancingScript-Regular.ttf);}
+@font-face{font-family:'rrr'; src:url(../fonts/font/OleoScript-Regular.ttf);}
+*{box-sizing: border-box;}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/dark.jpg);
+   background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    position: relative;
+    
+}
+
+.custom-select {
+ border-radius: 0;
+    padding: 0px;
+    font-size: 13px;
+}
+
+
+
+.login{
+   text-align: start;
+    position: absolute;
+    top: 180px;
+              background: linear-gradient( 
+183deg
+ , #090a0aad, #84353500);
+    padding: 20px 20px;
+    border-radius: 62px;
+    box-shadow: 2px 6px #ffffff;
+    color: #ffffff;
+}
+.login h2{
+    font-family: 'balo';
+}
+
+.login input{
+    font-size: 16px;
+}
+
+.login label{
+    font-size: 14px;
+    color:#ffffff;
+   
+}
+
+.login .form-group{
+    margin-top: 10px;
+}
+
+.login .form-control, .login .form-control {
+    border: 0;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    font-size: 17px; 
+}
+
+.login button{
+    text-align: center;
+    margin-top: 20px;
+       width: 200px;
+    font-family: 'balo';
+    padding: 10px 20px;
+    font-size: 20px;
+          background-image: linear-gradient(to right, #73ebec , #7676e4);
+}
+.login button:focus{
+    box-shadow: none;
+}
+
+.login .send{
+    text-align: center;
+    align-items: center;
+}

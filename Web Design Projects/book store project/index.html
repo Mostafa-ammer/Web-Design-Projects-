@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AMA Shop</title>
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/he-fo.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="w-100 ">
+    <div class="container">
+      <!-- First Header-->
+       <div class="first-header">
+          <div class="row">
+          <div class="col-md-3 col-12">
+           <a href="index.html" class="logo text-center">
+               <img src="./img/logo_green.png" alt="">
+           </a>
+          </div>
+          <div class="col-md-6 col-12">
+           <div class="search-bar">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-search aa"></i></span>
+                    </div>
+
+                    <input type="text" class="form-control" placeholder="Search ...">
+
+                    <div class="input-group-append">
+                        <button class="input-group-text">Search</button>
+                    </div>
+                </div>
+           </div>
+          </div>
+
+          <div class="col-md-3 col-12">
+           <div class="user-icons mt-2">
+               <div class="row text-center">
+                  <div class="col-4">
+                   <div class="wish-list" id="wish-list">
+                       <i class="far fa-heart ico" ></i>
+                       <span class="badge badge-danger">2</span>
+                   </div>
+                  </div>
+
+                  <div class="col-4">
+                   <div class="cart" id="cart">
+                  <a href="./cart.html " > <i class="fas fa-shopping-cart ico"></i></a>
+                       <span class="badge badge-danger">1</span>
+                   </div>
+                  </div>
+
+                  <div class="col-4">
+                   <div class="user" id="user">
+                       <i class="far fa-user ico" ></i>
+                   </div>
+                  </div>
+               </div>
+
+
+           </div>
+          </div>
+
+
+          <!-- Cart items -->
+
+
+
+          <!-- Wish List -->
+
+
+
+          <!-- Login And register tabs -->
+
+          <div class="user-tabs py-3 col-4" id="log-regi">
+           <!-- tabs -->
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#login">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#register">register</a>
+              </li>
+
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+              <div class="tab-pane container active" id="login">
+                <!-- Login Tab -->
+                  <div class="login">
+                    <div class="form-group">
+                      <label class="p-0">Email address</label>
+                      <input type="email" class="form-control" id="lo-email" autocomplete="off">
+                      <i class="fas fa-at ico"></i>
+                      <p class="m-0 text-danger d-none lo-email"> Pleas Enter Your Email.</p>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="p-0">Password</label>
+                      <input type="password" class="form-control" id="lo-pass">
+                      <i class="fas fa-unlock-alt ico"></i>
+                      <p class="m-0 text-danger d-none lo-pass"> Pleas Enter Your password.</p>
+                    </div>
+
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="remember" style="
+                      padding: 10px 25px">
+                      <label class="custom-control-label" for="remember">Remember Me</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mt-4 rounded-0">Login</button>
+                    </div>
+
+              </div>
+              <!-- register -->
+              <div class="tab-pane container fade" id="register">
+                  <!-- Login Tab -->
+                  <div class="register">
+                    <div class="form-group">
+                        <label for="">Name</label>
+                        <input type="text" id="name" class="form-control" autocomplete="off">
+                        <i class="far fa-user ico"></i>
+                        <p class="m-0 text-danger d-none name"> Pleas Enter Your Name.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="email" id="email" class="form-control" autocomplete="off">
+                        <i class="fas fa-at ico"></i>
+                        <p class="m-0 text-danger d-none email"> Pleas Enter Your Email.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Password</label>
+                        <input type="password" id="pass" class="form-control">
+                        <i class="fas fa-unlock ico"></i>
+                        <p class="m-0 text-danger d-none pass"> Pleas Enter Your Password.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Re-Password</label>
+                        <input type="password" id="re-pass" class="form-control">
+                        <i id="ico" class="fas fa-undo ico"></i>
+                        <p class="m-0 text-danger d-none re-pass"> This Not Equal Password.</p>
+                    </div>
+                    <div class="m-or-f">
+                        <div class="custom-control custom-radio custom-control-inline male">
+                            <input type="radio" class="custom-control-input" id="maleRadio" name="radio">
+                            <label class="custom-control-label" for="maleRadio">Male</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline female">
+                            <input type="radio" class="custom-control-input" id="femaleRadio" name="radio" value="Male">
+                            <label class="custom-control-label" for="femaleRadio">Female</label>
+                        </div>
+                        <button type="button" class="btn btn-danger mt-4 d-block rounded-0">Sign Up</button>
+
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>  <!-- End Login And Register Tab-->
+    </div><!-- End First Header Row-->
+</div><!-- End First Header-->
+
+       <hr>
+
+<!-- Second Header-->
+<div class="second-header">
+<div class="row">
+
+
+
+<div class="col-lg-12 ">
+<div class="menu">
+<nav class="navbar navbar-expand-lg p-0 justify-content-center data-target " id="#navbar" data-toggle="collapse">
+
+
+ <div class="collapse navbar-collapse justify-content-center" id="navbar">
+
+     <ul class="navbar-nav ">
+        <li class="nav-item">
+            <a class="nav-link active" href="index.html" class="active">Home</a>
+        </li>
+        <li class="nav-item shop"  id="shop">
+            <a class="nav-link" href="./books categories.html">Categories</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./faq.html">F.A.Q</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./pill.html">bill</a>
+        </li>
+    </ul>
+
+ </div>
+</nav>
+</div>
+</div>
+
+
+</div>
+</div><!-- End second Header-->
+
+   </div>
+</header>
+
+
+
+<!--   start baner section-->
+
+<section class="baner">
+    <div class="container">
+       <div class="row">
+        <div class="owl-carousel owl-theme baner-slider">
+            <div class="item">
+                <div class="row">
+                    <div class="col-7">
+                        <div class="baner-content pt-4">
+                            <div class="baner-prodc-subname">
+                                <h3 class="m-0">Let the sun shine</h3>
+                                <p class="baner-prodc-name">Award winners, Biography, Coming soon, Cookbooks</p>
+                            </div>
+                            <div class="baner-prodc-about">
+                                <p>
+
+This delightful book is the latest in the series, this is the story of how a tall, shy youth from Weston-super-Mare went on to become a self-confessed legend.
+</p>
+                            </div>
+                            <div class="baner-prodc-price">
+                                <span class="pr-2">$14.99</span>
+                                <span><s>$20</s></span>
+                            </div>
+                            <div class="baner-btn py-4">
+                                <a href="./pill.html" class="p-2 px-4"> Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-5">
+                        <div class="baner-img">
+                            <img src="img/book1.jpg" alt="" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row">
+                    <div class="col-7">
+                        <div class="baner-content pt-4">
+                            <div class="baner-prodc-subname">
+                                <h3 class="m-0">New galaxy</h3>
+                                <p class="baner-prodc-name">Audio books, Coming soon, Drama</p>
+                            </div>
+                            <div class="baner-prodc-about">
+                                <p>This delightful book is the latest in the series, this is the story of how a tall, shy youth from Weston-super-Mare went on to become a self-confessed legend.</p>
+                            </div>
+                            <div class="baner-prodc-price">
+                                <span class="pr-2">$10.20</span>
+                                <span><s>$15</s></span>
+                            </div>
+                            <div class="baner-btn py-4">
+                                <a href="./pill.html" class="p-2 px-4"> Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-5">
+                        <div class="baner-img">
+                            <img src="img/book8.jpg" alt="" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row">
+                    <div class="col-7">
+                        <div class="baner-content pt-4">
+                            <div class="baner-prodc-subname">
+                                <h3 class="m-0">lonely man in white hat</h3>
+                                <p class="baner-prodc-name">Audio books, Cookbooks, New releases, Romans</p>
+                            </div>
+                            <div class="baner-prodc-about">
+                                <p>This delightful book is the latest in the series, this is the story of how a tall, shy youth from Weston-super-Mare went on to become a self-confessed legend.</p>
+                            </div>
+                            <div class="baner-prodc-price">
+                                <span class="pr-2">$20.55</span>
+                                <span><s>$25</s></span>
+                            </div>
+                            <div class="baner-btn py-4">
+                                <a href="./pill.html" class="p-2 px-4">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-5">
+                        <div class="baner-img">
+                            <img src="img/book9.jpg" alt="" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+</section>
+
+<!--   end baner section-->
+
+
+
+<!--start new prodacts section-->
+
+ <section class="new-prodacts">
+     <div class="container">
+
+         <div class="row">
+
+            <div class="col-2 d-md-block d-none">
+                <h6 class="py-2 soon">Soon Arrive</h6>
+                 <div class="owl-carousel owl-theme soon-arrive py-2">
+                     <div class="item">
+                         <img src="./img/book12.jpg" alt="" >
+                     </div>
+                     <div class="item">
+                        <img src="./img/books7.jpg" alt="" >
+                    </div>
+                    <div class="item">
+                        <img src="./img/book5.jpg" alt="" >
+                    </div>
+                 </div>
+             </div>
+
+
+
+
+
+
+
+  <div class="col-lg-3">
+<div class="card" >
+  <img class="card-img-top" src="./img/books7.jpg" alt="Card image">
+  <div class="card-body">
+     <h4 class="card-title">Storm</h4>
+     <p class="card-text">Best sellers, Biography</p>
+     <a href="#" class="btn btn-primary btn-block">view details</a>
+  </div>
+
+<div class="hover-links">
+  <div class="prodact-action  ">
+    <span data-toggle="tooltip" title="Quick View">
+    <i class="far fa-eye ico"></i>
+    </span>
+    <span data-toggle="tooltip" title="Add to WishList">
+    <i class="far fa-heart ico"></i>
+    </span>
+    <span data-toggle="tooltip" title="Add To Cart">
+    <i class="fas fa-shopping-cart ico"></i>
+    </span>
+    <h3> Discount 30%</h3>
+    <div class="baner-prodc-price">
+        <span class="pr-2">$14.99</span>
+        <span><s>$20</s></span>
+    </div>
+
+
+  </div>
+
+</div>
+<div class="over-lay"></div>
+</div>
+
+
+     </div>
+     <div class="col-lg-3">
+
+     <div class="card" >
+       <img class="card-img-top" src="./img/book8.jpg" alt="Card image">
+       <div class="card-body">
+          <h4 class="card-title">New galaxy</h4>
+          <p class="card-text">Audio books, Drama</p>
+          <a href="#" class="btn btn-primary btn-block">view details</a>
+       </div>
+
+     <div class="hover-links">
+       <div class="prodact-action  ">
+         <span data-toggle="tooltip" title="Quick View">
+         <i class="far fa-eye ico"></i>
+         </span>
+         <span data-toggle="tooltip" title="Add to WishList">
+         <i class="far fa-heart ico"></i>
+         </span>
+         <span data-toggle="tooltip" title="Add To Cart">
+         <i class="fas fa-shopping-cart ico"></i>
+         </span>
+         <h3> Discount 30%</h3>
+         <div class="baner-prodc-price">
+             <span class="pr-2">$14.99</span>
+             <span><s>$20</s></span>
+         </div>
+
+
+       </div>
+
+     </div>
+     <div class="over-lay"></div>
+     </div>
+
+
+          </div>
+          <div class="col-lg-3">
+
+          <div class="card" >
+            <img class="card-img-top" src="./img/book9.jpg" alt="Card image">
+            <div class="card-body">
+               <h4 class="card-title"> man in white hat</h4>
+               <p class="card-text">  New releases, Romans</p>
+               <a href="#" class="btn btn-primary btn-block">view details</a>
+            </div>
+
+          <div class="hover-links">
+            <div class="prodact-action  ">
+              <span data-toggle="tooltip" title="Quick View">
+              <i class="far fa-eye ico"></i>
+              </span>
+              <span data-toggle="tooltip" title="Add to WishList">
+              <i class="far fa-heart ico"></i>
+              </span>
+              <span data-toggle="tooltip" title="Add To Cart">
+              <i class="fas fa-shopping-cart ico"></i>
+              </span>
+              <h3> Discount 30%</h3>
+              <div class="baner-prodc-price">
+                  <span class="pr-2">$14.99</span>
+                  <span><s>$20</s></span>
+              </div>
+
+
+            </div>
+
+          </div>
+          <div class="over-lay"></div>
+          </div>
+
+
+               </div>
+               <div class="col-lg-3">
+
+               <div class="card" >
+                 <img class="card-img-top" src="./img/book1.jpg" alt="Card image">
+                 <div class="card-body">
+                    <h4 class="card-title">Let the sun shine</h4>
+                    <p class="card-text">Award winners, Biography, Coming soon, Cookbooks</p>
+                    <a href="#" class="btn btn-primary btn-block">view details</a>
+                 </div>
+
+               <div class="hover-links">
+                 <div class="prodact-action  ">
+                   <span data-toggle="tooltip" title="Quick View">
+                   <i class="far fa-eye ico"></i>
+                   </span>
+                   <span data-toggle="tooltip" title="Add to WishList">
+                   <i class="far fa-heart ico"></i>
+                   </span>
+                   <span data-toggle="tooltip" title="Add To Cart">
+                   <i class="fas fa-shopping-cart ico"></i>
+                   </span>
+                   <h3> Discount 30%</h3>
+                   <div class="baner-prodc-price">
+                       <span class="pr-2">$14.99</span>
+                       <span><s>$20</s></span>
+                   </div>
+
+
+                 </div>
+
+               </div>
+               <div class="over-lay"></div>
+               </div>
+
+
+                    </div>
+                    <div class="col-lg-3">
+
+                    <div class="card" >
+                      <img class="card-img-top" src="./img/book3.jpg" alt="Card image">
+                      <div class="card-body">
+                         <h4 class="card-title">The son</h4>
+                         <p class="card-text">Best sellers, Drama, New releases, Romans</p>
+                         <a href="#" class="btn btn-primary btn-block">view details</a>
+                      </div>
+
+                    <div class="hover-links">
+                      <div class="prodact-action  ">
+                        <span data-toggle="tooltip" title="Quick View">
+                        <i class="far fa-eye ico"></i>
+                        </span>
+                        <span data-toggle="tooltip" title="Add to WishList">
+                        <i class="far fa-heart ico"></i>
+                        </span>
+                        <span data-toggle="tooltip" title="Add To Cart">
+                        <i class="fas fa-shopping-cart ico"></i>
+                        </span>
+                        <h3> Discount 30%</h3>
+                        <div class="baner-prodc-price">
+                            <span class="pr-2">$14.99</span>
+                            <span><s>$20</s></span>
+                        </div>
+
+
+                      </div>
+
+                    </div>
+                    <div class="over-lay"></div>
+                    </div>
+
+
+                         </div>
+                         <div class="col-lg-3">
+
+                         <div class="card" >
+                           <img class="card-img-top" src="./img/book2.jpg" alt="Card image">
+                           <div class="card-body">
+                              <h4 class="card-title">The forest</h4>
+                              <p class="card-text">Award winners, Biography, Coming soon, Cookbooks</p>
+                              <a href="#" class="btn btn-primary btn-block">view details</a>
+                           </div>
+
+                         <div class="hover-links">
+                           <div class="prodact-action  ">
+                             <span data-toggle="tooltip" title="Quick View">
+                             <i class="far fa-eye ico"></i>
+                             </span>
+                             <span data-toggle="tooltip" title="Add to WishList">
+                             <i class="far fa-heart ico"></i>
+                             </span>
+                             <span data-toggle="tooltip" title="Add To Cart">
+                             <i class="fas fa-shopping-cart ico"></i>
+                             </span>
+                             <h3> Discount 30%</h3>
+                             <div class="baner-prodc-price">
+                                 <span class="pr-2">$14.99</span>
+                                 <span><s>$20</s></span>
+                             </div>
+
+
+                           </div>
+
+                         </div>
+                         <div class="over-lay"></div>
+                         </div>
+
+
+                              </div>
+                              <div class="col-lg-3">
+
+                              <div class="card" >
+                                <img class="card-img-top" src="./img/book12.jpg" alt="Card image">
+                                <div class="card-body">
+                                   <h4 class="card-title">It’s  strange story</h4>
+                                   <p class="card-text">Best sellers, Cookbooks, New releases</p>
+                                   <a href="#" class="btn btn-primary btn-block">view details</a>
+                                </div>
+
+                              <div class="hover-links">
+                                <div class="prodact-action  ">
+                                  <span data-toggle="tooltip" title="Quick View">
+                                  <i class="far fa-eye ico"></i>
+                                  </span>
+                                  <span data-toggle="tooltip" title="Add to WishList">
+                                  <i class="far fa-heart ico"></i>
+                                  </span>
+                                  <span data-toggle="tooltip" title="Add To Cart">
+                                  <i class="fas fa-shopping-cart ico"></i>
+                                  </span>
+                                  <h3> Discount 30%</h3>
+                                  <div class="baner-prodc-price">
+                                      <span class="pr-2">$14.99</span>
+                                      <span><s>$20</s></span>
+                                  </div>
+
+
+                                </div>
+
+                              </div>
+                              <div class="over-lay"></div>
+                              </div>
+
+
+                                   </div>
+                                   <div class="col-lg-3">
+
+                                   <div class="card" >
+                                     <img class="card-img-top" src="./img/book5.jpg" alt="Card image">
+                                     <div class="card-body">
+                                        <h4 class="card-title">The long road to the deep Silence</h4>
+                                        <p class="card-text">Biography, Business books, New releases</p>
+                                        <a href="#" class="btn btn-primary btn-block">view details</a>
+                                     </div>
+
+                                   <div class="hover-links">
+                                     <div class="prodact-action  ">
+                                       <span data-toggle="tooltip" title="Quick View">
+                                       <i class="far fa-eye ico"></i>
+                                       </span>
+                                       <span data-toggle="tooltip" title="Add to WishList">
+                                       <i class="far fa-heart ico"></i>
+                                       </span>
+                                       <span data-toggle="tooltip" title="Add To Cart">
+                                       <i class="fas fa-shopping-cart ico"></i>
+                                       </span>
+                                       <h3> Discount 30%</h3>
+                                       <div class="baner-prodc-price">
+                                           <span class="pr-2">$14.99</span>
+                                           <span><s>$20</s></span>
+                                       </div>
+
+
+                                     </div>
+
+                                   </div>
+                                   <div class="over-lay"></div>
+                                   </div>
+
+
+                                        </div>
+                                        <div class="col-lg-3">
+
+                                        <div class="card" >
+                                          <img class="card-img-top" src="./img/animal-book.png" alt="Card image">
+                                          <div class="card-body">
+                                             <h4 class="card-title">danger animal demonistrate</h4>
+                                             <p class="card-text">Best sellers, Biography,fear global</p>
+                                             <a href="#" class="btn btn-primary btn-block">view details</a>
+                                          </div>
+
+                                        <div class="hover-links">
+                                          <div class="prodact-action  ">
+                                            <span data-toggle="tooltip" title="Quick View">
+                                            <i class="far fa-eye ico"></i>
+                                            </span>
+                                            <span data-toggle="tooltip" title="Add to WishList">
+                                            <i class="far fa-heart ico"></i>
+                                            </span>
+                                            <span data-toggle="tooltip" title="Add To Cart">
+                                            <i class="fas fa-shopping-cart ico"></i>
+                                            </span>
+                                            <h3> Discount 30%</h3>
+                                            <div class="baner-prodc-price">
+                                                <span class="pr-2">$14.99</span>
+                                                <span><s>$20</s></span>
+                                            </div>
+
+
+                                          </div>
+
+                                        </div>
+                                        <div class="over-lay"></div>
+                                        </div>
+
+
+                                             </div>
+                                             <div class="col-lg-3">
+
+                                             <div class="card" >
+                                               <img class="card-img-top" src="./img/earth.jpg" alt="Card image">
+                                               <div class="card-body">
+                                                  <h4 class="card-title">the sun the moon and the starts</h4>
+                                                  <p class="card-text">Best sellers, Biography,in earth on moon,comming soon</p>
+                                                  <a href="#" class="btn btn-primary btn-block">view details</a>
+                                               </div>
+
+                                             <div class="hover-links">
+                                               <div class="prodact-action  ">
+                                                 <span data-toggle="tooltip" title="Quick View">
+                                                 <i class="far fa-eye ico"></i>
+                                                 </span>
+                                                 <span data-toggle="tooltip" title="Add to WishList">
+                                                 <i class="far fa-heart ico"></i>
+                                                 </span>
+                                                 <span data-toggle="tooltip" title="Add To Cart">
+                                                 <i class="fas fa-shopping-cart ico"></i>
+                                                 </span>
+                                                 <h3> Discount 30%</h3>
+                                                 <div class="baner-prodc-price">
+                                                     <span class="pr-2">$14.99</span>
+                                                     <span><s>$20</s></span>
+                                                 </div>
+
+
+                                               </div>
+
+                                             </div>
+                                             <div class="over-lay"></div>
+                                             </div>
+
+
+                                                  </div>
+                                                  <div class="col-lg-3">
+
+                                                  <div class="card" >
+                                                    <img class="card-img-top" src="./img/zombia.jpg" alt="Card image">
+                                                    <div class="card-body">
+                                                       <h4 class="card-title">ZOMBIES Diaries </h4>
+                                                       <p class="card-text">Best sellers, Biography,fright story,kill all people in fright way</p>
+                                                       <a href="#" class="btn btn-primary btn-block">view details</a>
+                                                    </div>
+
+                                                  <div class="hover-links">
+                                                    <div class="prodact-action  ">
+                                                      <span data-toggle="tooltip" title="Quick View">
+                                                      <i class="far fa-eye ico"></i>
+                                                      </span>
+                                                      <span data-toggle="tooltip" title="Add to WishList">
+                                                      <i class="far fa-heart ico"></i>
+                                                      </span>
+                                                      <span data-toggle="tooltip" title="Add To Cart">
+                                                      <i class="fas fa-shopping-cart ico"></i>
+                                                      </span>
+                                                      <h3> Discount 30%</h3>
+                                                      <div class="baner-prodc-price">
+                                                          <span class="pr-2">$14.99</span>
+                                                          <span><s>$20</s></span>
+                                                      </div>
+
+
+                                                    </div>
+
+                                                  </div>
+                                                  <div class="over-lay"></div>
+                                                  </div>
+
+
+                                                       </div>
+
+
+
+
+         </div>
+     </div>
+ </section>
+
+<!--end new prodacts section-->
+
+
+
+  <!--start prodacts section-->
+
+  <section class="home-prodacts">
+      <div class="container">
+          <div class="prodacts-tabs">
+              <div class="home-prodacts-title">
+                  <h5 class="m-0">Prodacts</h5>
+              </div>
+            <ul class="nav nav-tabs justify-content-end">
+                <li class="nav-item active">
+                <a class="nav-link active" data-toggle="tab" href="#featured">
+                    <i class="fas fa-luggage-cart"></i> Featured
+                </a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#best-seller">
+                    <i class="fab fa-gratipay"></i> Best Seller
+                </a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#top-rated">
+                    <i class="fas fa-fire-alt"></i>   Top Rated
+                </a>
+                </li>
+
+            </ul>
+
+          </div>
+
+          <div class="tab-content py-5">
+            <div id="featured" class="tab-pane container active">
+
+              <div class="featured owl-carousel owl-theme">
+                  <div class="item  p-0">
+                      <figure class="prodact">
+                          <div class="prodact-img">
+                              <img src="./img/book-11.jpg" alt="" class="img-fluid">
+                          </div>
+                          <figcaption class="p-2 py-3">
+                              <div class="prodact-name">
+                                  <h5 class=" m-0">Humans of New York</h5>
+                              </div>
+                              <!-- prodact-price -->
+                              <div class="prodact-price">
+                                  <p class="m-0">$35.00</p>
+                              </div>
+                              <!-- prodact-rate -->
+                              <div class="prodact-rate">
+
+                                 <i class="far fa-star"></i>
+                                 <i class="far fa-star"></i>
+                                 <i class="far fa-star"></i>
+                                 <i class="far fa-star"></i>
+                                 <i class="far fa-star"></i>
+
+                              </div>
+                              <!-- prodact-action -->
+                              <div class="prodact-action justify-content-end">
+                                <span data-toggle="tooltip" title="Quick View">
+                                <i class="far fa-eye"></i>
+                                </span>
+                                <span data-toggle="tooltip" title="Add to WishList">
+                                <i class="far fa-heart"></i>
+                                </span>
+                                <span data-toggle="tooltip" title="Add To Cart">
+                                <i class="fas fa-shopping-cart ico"></i>
+                                </span>
+                              </div>
+                          </figcaption>
+                      </figure>
+</div>
+
+<div class="item  p-0">
+                      <figure class="prodact">
+                          <div class="prodact-img">
+                              <img src="./img/book-08.jpg" alt="" class="img-fluid">
+                          </div>
+                          <figcaption class="p-2 py-3">
+                              <div class="prodact-name">
+                                  <h5 class=" m-0">Pet Sematary</h5>
+                              </div>
+                              <!-- prodact-price -->
+                              <div class="prodact-price">
+                                  <p class="m-0">$20.00</p>
+                              </div>
+                              <!-- prodact-rate -->
+                              <div class="prodact-rate">
+
+                                 <i class="far fa-star"></i>
+                                 <i class="far fa-star"></i>
+                                 <i class="far fa-star"></i>
+                                 <i class="far fa-star"></i>
+                                 <i class="far fa-star"></i>
+
+                              </div>
+                              <!-- prodact-action -->
+                              <div class="prodact-action justify-content-end">
+                                <span data-toggle="tooltip" title="Quick View">
+                                <i class="far fa-eye"></i>
+                                </span>
+                                <span data-toggle="tooltip" title="Add to WishList">
+                                <i class="far fa-heart"></i>
+                                </span>
+                                <span data-toggle="tooltip" title="Add To Cart">
+                                <i class="fas fa-shopping-cart ico"></i>
+                                </span>
+                              </div>
+                          </figcaption>
+                      </figure>
+</div>
+<div class="item  p-0">
+                      <figure class="prodact">
+                          <div class="prodact-img">
+                              <img src="./img/book-06.jpg" alt="" class="img-fluid">
+                          </div>
+                          <figcaption class="p-2 py-3">
+                              <div class="prodact-name">
+                                  <h5 class=" m-0">This is Spider-Man</h5>
+                              </div>
+                              <!-- prodact-price -->
+                              <div class="prodact-price">
+                                  <p class="m-0">$18.00</p>
+                              </div>
+                              <!-- prodact-rate -->
+                              <div class="prodact-rate">
+
+                                 <i class="far fa-star"></i>
+                                 <i class="far fa-star"></i>
+                                 <i class="far fa-star"></i>
+                                 <i class="far fa-star"></i>
+                                 <i class="far fa-star"></i>
+
+                              </div>
+                              <!-- prodact-action -->
+                              <div class="prodact-action justify-content-end">
+                                <span data-toggle="tooltip" title="Quick View">
+                                <i class="far fa-eye"></i>
+                                </span>
+                                <span data-toggle="tooltip" title="Add to WishList">
+                                <i class="far fa-heart"></i>
+                                </span>
+                                <span data-toggle="tooltip" title="Add To Cart">
+                                <i class="fas fa-shopping-cart ico"></i>
+                                </span>
+                              </div>
+                          </figcaption>
+                      </figure>
+                </div>
+                <div class="item  p-0">
+                                      <figure class="prodact">
+                                          <div class="prodact-img">
+                                              <img src="./img/book-03.jpg" alt="" class="img-fluid">
+                                          </div>
+                                          <figcaption class="p-2 py-3">
+                                              <div class="prodact-name">
+                                                  <h5 class=" m-0">Frozen Stories</h5>
+                                              </div>
+                                              <!-- prodact-price -->
+                                              <div class="prodact-price">
+                                                  <p class="m-0">$30.00</p>
+                                              </div>
+                                              <!-- prodact-rate -->
+                                              <div class="prodact-rate">
+
+                                                 <i class="far fa-star"></i>
+                                                 <i class="far fa-star"></i>
+                                                 <i class="far fa-star"></i>
+                                                 <i class="far fa-star"></i>
+                                                 <i class="far fa-star"></i>
+
+                                              </div>
+                                              <!-- prodact-action -->
+                                              <div class="prodact-action justify-content-end">
+                                                <span data-toggle="tooltip" title="Quick View">
+                                                <i class="far fa-eye"></i>
+                                                </span>
+                                                <span data-toggle="tooltip" title="Add to WishList">
+                                                <i class="far fa-heart"></i>
+                                                </span>
+                                                <span data-toggle="tooltip" title="Add To Cart">
+                                                <i class="fas fa-shopping-cart ico"></i>
+                                                </span>
+                                              </div>
+                                          </figcaption>
+                                      </figure>
+                                </div>
+
+
+
+              </div>
+            </div>
+
+             <div id="best-seller" class="tab-pane container ">
+              <div class="best-seller owl-carousel owl-theme">
+
+                    <div class="item  p-0">
+                      <figure class="prodact">
+                          <div class="prodact-img">
+                              <img src="./img/printpress-product-6.jpg" alt="" class="img-fluid">
+                          </div>
+                          <figcaption class="p-2 py-3">
+                              <div class="prodact-name">
+                                  <h5 class=" m-0">History of Europe</h5>
+                              </div>
+                              <!-- prodact-price -->
+                              <div class="prodact-price">
+                                  <p class="m-0">$40.00</p>
+                              </div>
+                              <!-- prodact-rate -->
+                              <div class="prodact-rate">
+
+                                 <i class="far fa-star"></i>
+                                 <i class="far fa-star"></i>
+                                 <i class="far fa-star"></i>
+                                 <i class="far fa-star"></i>
+                                 <i class="far fa-star"></i>
+
+                              </div>
+                              <!-- prodact-action -->
+                              <div class="prodact-action justify-content-end">
+                                <span data-toggle="tooltip" title="Quick View">
+                                <i class="far fa-eye"></i>
+                                </span>
+                                <span data-toggle="tooltip" title="Add to WishList">
+                                <i class="far fa-heart"></i>
+                                </span>
+                                <span data-toggle="tooltip" title="Add To Cart">
+                                <i class="fas fa-shopping-cart ico"></i>
+                                </span>
+                              </div>
+                          </figcaption>
+                      </figure>
+</div>
+
+<div class="item  p-0">
+  <figure class="prodact">
+      <div class="prodact-img">
+          <img src="./img/printpress-product-5.jpg" alt="" class="img-fluid">
+      </div>
+      <figcaption class="p-2 py-3">
+          <div class="prodact-name">
+              <h5 class=" m-0">Sonnets</h5>
+          </div>
+          <!-- prodact-price -->
+          <div class="prodact-price">
+              <p class="m-0">
+
+$27.00
+</p>
+          </div>
+          <!-- prodact-rate -->
+          <div class="prodact-rate">
+
+             <i class="far fa-star"></i>
+             <i class="far fa-star"></i>
+             <i class="far fa-star"></i>
+             <i class="far fa-star"></i>
+             <i class="far fa-star"></i>
+
+          </div>
+          <!-- prodact-action -->
+          <div class="prodact-action justify-content-end">
+            <span data-toggle="tooltip" title="Quick View">
+            <i class="far fa-eye"></i>
+            </span>
+            <span data-toggle="tooltip" title="Add to WishList">
+            <i class="far fa-heart"></i>
+            </span>
+            <span data-toggle="tooltip" title="Add To Cart">
+            <i class="fas fa-shopping-cart ico"></i>
+            </span>
+          </div>
+      </figcaption>
+  </figure>
+</div>
+<div class="item  p-0">
+  <figure class="prodact">
+      <div class="prodact-img">
+          <img src="./img/printpress-product-7.jpg" alt="" class="img-fluid">
+      </div>
+      <figcaption class="p-2 py-3">
+          <div class="prodact-name">
+              <h5 class=" m-0">Becoming</h5>
+          </div>
+          <!-- prodact-price -->
+          <div class="prodact-price">
+              <p class="m-0">
+
+$28.00
+</p>
+          </div>
+          <!-- prodact-rate -->
+          <div class="prodact-rate">
+
+             <i class="far fa-star"></i>
+             <i class="far fa-star"></i>
+             <i class="far fa-star"></i>
+             <i class="far fa-star"></i>
+             <i class="far fa-star"></i>
+
+          </div>
+          <!-- prodact-action -->
+          <div class="prodact-action justify-content-end">
+            <span data-toggle="tooltip" title="Quick View">
+            <i class="far fa-eye"></i>
+            </span>
+            <span data-toggle="tooltip" title="Add to WishList">
+            <i class="far fa-heart"></i>
+            </span>
+            <span data-toggle="tooltip" title="Add To Cart">
+            <i class="fas fa-shopping-cart ico"></i>
+            </span>
+          </div>
+      </figcaption>
+  </figure>
+</div>
+
+<div class="item  p-0">
+                      <figure class="prodact">
+                          <div class="prodact-img">
+                              <img src="./img/printpress-product-2.jpg" alt="" class="img-fluid">
+                          </div>
+                          <figcaption class="p-2 py-3">
+                              <div class="prodact-name">
+                                  <h5 class=" m-0">Penguin Classics</h5>
+                              </div>
+                              <!-- prodact-price -->
+                              <div class="prodact-price">
+                                  <p class="m-0">$26.00</p>
+                              </div>
+                              <!-- prodact-rate -->
+                              <div class="prodact-rate">
+
+                                 <i class="far fa-star"></i>
+                                 <i class="far fa-star"></i>
+                                 <i class="far fa-star"></i>
+                                 <i class="far fa-star"></i>
+                                 <i class="far fa-star"></i>
+
+                              </div>
+                              <!-- prodact-action -->
+                              <div class="prodact-action justify-content-end">
+                                <span data-toggle="tooltip" title="Quick View">
+                                <i class="far fa-eye"></i>
+                                </span>
+                                <span data-toggle="tooltip" title="Add to WishList">
+                                <i class="far fa-heart"></i>
+                                </span>
+                                <span data-toggle="tooltip" title="Add To Cart">
+                                <i class="fas fa-shopping-cart ico"></i>
+                                </span>
+                              </div>
+                          </figcaption>
+                      </figure>
+
+</div>
+
+
+
+
+              </div>
+            </div>
+
+             <div id="top-rated" class="tab-pane container ">
+              <div class="top-rated owl-carousel owl-theme">
+                  <div class="item  p-0">
+                      <figure class="prodact">
+                          <div class="prodact-img">
+                              <img src="./img/book7.png" alt="" class="img-fluid">
+                          </div>
+                          <figcaption class="p-2 py-3">
+                              <div class="prodact-name">
+                                  <h5 class=" m-0">Train Your Brain</h5>
+                              </div>
+                              <!-- prodact-price -->
+                              <div class="prodact-price">
+                                  <p class="m-0">$100.00</p>
+                              </div>
+                              <!-- prodact-rate -->
+                              <div class="prodact-rate">
+
+                                 <i class="far fa-star"></i>
+                                 <i class="far fa-star"></i>
+                                 <i class="far fa-star"></i>
+                                 <i class="far fa-star"></i>
+                                 <i class="far fa-star"></i>
+
+                              </div>
+                              <!-- prodact-action -->
+                              <div class="prodact-action justify-content-end">
+                                <span data-toggle="tooltip" title="Quick View">
+                                <i class="far fa-eye"></i>
+                                </span>
+                                <span data-toggle="tooltip" title="Add to WishList">
+                                <i class="far fa-heart"></i>
+                                </span>
+                                <span data-toggle="tooltip" title="Add To Cart">
+                                <i class="fas fa-shopping-cart ico"></i>
+                                </span>
+                              </div>
+                          </figcaption>
+                      </figure>
+</div>
+
+<div class="item  p-0">
+    <figure class="prodact">
+        <div class="prodact-img">
+            <img src="./img/book4.png" alt="" class="img-fluid">
+        </div>
+        <figcaption class="p-2 py-3">
+            <div class="prodact-name">
+                <h5 class=" m-0">The Woman in White</h5>
+            </div>
+            <!-- prodact-price -->
+            <div class="prodact-price">
+                <p class="m-0"> 	$80.00</p>
+            </div>
+            <!-- prodact-rate -->
+            <div class="prodact-rate">
+
+               <i class="far fa-star"></i>
+               <i class="far fa-star"></i>
+               <i class="far fa-star"></i>
+               <i class="far fa-star"></i>
+               <i class="far fa-star"></i>
+
+            </div>
+            <!-- prodact-action -->
+            <div class="prodact-action justify-content-end">
+              <span data-toggle="tooltip" title="Quick View">
+              <i class="far fa-eye"></i>
+              </span>
+              <span data-toggle="tooltip" title="Add to WishList">
+              <i class="far fa-heart"></i>
+              </span>
+              <span data-toggle="tooltip" title="Add To Cart">
+              <i class="fas fa-shopping-cart ico"></i>
+              </span>
+            </div>
+        </figcaption>
+    </figure>
+</div>
+<div class="item  p-0">
+    <figure class="prodact">
+        <div class="prodact-img">
+            <img src="./img/book6.png" alt="" class="img-fluid">
+        </div>
+        <figcaption class="p-2 py-3">
+            <div class="prodact-name">
+                <h5 class=" m-0">Zero oil cook</h5>
+            </div>
+            <!-- prodact-price -->
+            <div class="prodact-price">
+                <p class="m-0">$80.00</p>
+            </div>
+            <!-- prodact-rate -->
+            <div class="prodact-rate">
+
+               <i class="far fa-star"></i>
+               <i class="far fa-star"></i>
+               <i class="far fa-star"></i>
+               <i class="far fa-star"></i>
+               <i class="far fa-star"></i>
+
+            </div>
+            <!-- prodact-action -->
+            <div class="prodact-action justify-content-end">
+              <span data-toggle="tooltip" title="Quick View">
+              <i class="far fa-eye"></i>
+              </span>
+              <span data-toggle="tooltip" title="Add to WishList">
+              <i class="far fa-heart"></i>
+              </span>
+              <span data-toggle="tooltip" title="Add To Cart">
+              <i class="fas fa-shopping-cart ico"></i>
+              </span>
+            </div>
+        </figcaption>
+    </figure>
+</div>
+<div class="item  p-0">
+    <figure class="prodact">
+        <div class="prodact-img">
+            <img src="./img/book1.png" alt="" class="img-fluid">
+        </div>
+        <figcaption class="p-2 py-3">
+            <div class="prodact-name">
+                <h5 class=" m-0">Victican</h5>
+            </div>
+            <!-- prodact-price -->
+            <div class="prodact-price">
+                <p class="m-0">$70.00</p>
+            </div>
+            <!-- prodact-rate -->
+            <div class="prodact-rate">
+
+               <i class="far fa-star"></i>
+               <i class="far fa-star"></i>
+               <i class="far fa-star"></i>
+               <i class="far fa-star"></i>
+               <i class="far fa-star"></i>
+
+            </div>
+            <!-- prodact-action -->
+            <div class="prodact-action justify-content-end">
+              <span data-toggle="tooltip" title="Quick View">
+              <i class="far fa-eye"></i>
+              </span>
+              <span data-toggle="tooltip" title="Add to WishList">
+              <i class="far fa-heart"></i>
+              </span>
+              <span data-toggle="tooltip" title="Add To Cart">
+              <i class="fas fa-shopping-cart ico"></i>
+              </span>
+            </div>
+        </figcaption>
+    </figure>
+</div>
+<div class="item  p-0">
+                      <figure class="prodact">
+                          <div class="prodact-img">
+                              <img src="./img/book1.png" alt="" class="img-fluid">
+                          </div>
+                          <figcaption class="p-2 py-3">
+                              <div class="prodact-name">
+                                  <h5 class=" m-0">Fusion Backpack</h5>
+                              </div>
+                              <!-- prodact-price -->
+                              <div class="prodact-price">
+                                  <p class="m-0">$19.00</p>
+                              </div>
+                              <!-- prodact-rate -->
+                              <div class="prodact-rate">
+
+                                 <i class="far fa-star"></i>
+                                 <i class="far fa-star"></i>
+                                 <i class="far fa-star"></i>
+                                 <i class="far fa-star"></i>
+                                 <i class="far fa-star"></i>
+
+                              </div>
+                              <!-- prodact-action -->
+                              <div class="prodact-action justify-content-end">
+                                <span data-toggle="tooltip" title="Quick View">
+                                <i class="far fa-eye"></i>
+                                </span>
+                                <span data-toggle="tooltip" title="Add to WishList">
+                                <i class="far fa-heart"></i>
+                                </span>
+                                <span data-toggle="tooltip" title="Add To Cart">
+                                <i class="fas fa-shopping-cart ico"></i>
+                                </span>
+                              </div>
+                          </figcaption>
+                      </figure>
+                  </div>
+              </div>
+            </div>
+
+
+            </div>
+
+
+          </div>
+
+
+
+
+  </section>
+
+<!--end prodacts section-->
+
+
+
+<!--start Special Offer section-->
+
+
+
+ <!--end testmonial section-->
+
+
+ <!-- start top-categorey section -->
+
+
+
+ <!-- end top-categorey section -->
+
+
+  <!--Start Blog section-->
+
+<!--
+  <section class="blog">
+      <div class="container">
+          <div class="all-blogs">
+              <div class="col-4">
+                  <div class="item">
+                      <figure>
+                          <div class="blog-img-and-tit">
+                              <img src="./img/blog/2.jpg" alt="">
+                              <h5>Lorem ipsum dolor sit amet.</h5>
+                          </div>
+                          <figcaption>
+                              <div class="blog-title">
+                                  <h5>Lorem ipsum dolor sit amet.</h5>
+                                  <p class="date">23 April 2020</p>
+                              </div>
+                              <div class="blog-disc">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus perspiciatis nostrum, temporibus aut odit alias qui molestiae. Eveniet, nostrum harum!</p>
+                              </div>
+
+                              <div class="blog-person">
+                                  <div class="row">
+
+                                      <div class="col-8">
+                                         <div class="row">
+                                          <div class="col-4">
+                                          <div class="person-img">
+                                              <img src="./img/blog/person1.jpg" alt="" class="rounded-circle img-fluid">
+                                          </div>
+                                          </div>
+
+                                          <div class="col-8">
+                                          <div class="person-name">
+                                              <h6>Abdulrahman</h6>
+                                          </div>
+                                          </div>
+                                         </div>
+                                      </div>
+
+                                      <div class="col-4">
+                                          <div class="blog-veiwed">
+                                              <i class="far fa-eye veiwed"></i>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </figcaption>
+                      </figure>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+-->
+
+
+
+<div class="loader">
+    <div></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <footer>
+
+    <!--brands-->
+    <div class="brands py-3">
+        <div class="container">
+           <!--slider img brands by owl carousel-->
+            <div class="owl-carousel owl-theme brand">
+                <div class="item"><img src="img/Brands/brand1.png" alt=""></div>
+                <div class="item"><img src="img/Brands/brand2.png" alt=""></div>
+                <div class="item"><img src="img/Brands/brand3.png" alt=""></div>
+                <div class="item"><img src="img/Brands/brand4.png" alt=""></div>
+                <div class="item"><img src="img/Brands/brand5.png" alt=""></div>
+                <div class="item"><img src="img/Brands/brand6.png" alt=""></div>
+                <div class="item"><img src="img/Brands/brand7.png" alt=""></div>
+                <div class="item"><img src="img/Brands/brand8.png" alt=""></div>
+                <div class="item"><img src="img/Brands/brand9.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--services-->
+
+
+
+    <!--newsletter-->
+
+
+
+    <!--last-footer-->
+    <div class="last-footer py-4">
+       <div class="container">
+           <div class="row ">
+               <div class="col-lg-3  col-6 py-3">
+                   <div class="about">
+                       <a href="./index.html">
+                        <img src="./img/logo_green.png" alt="" class="pb-3">
+                    </a>
+                       <ul class="list-group col-12 list-unstyled">
+                          <div class="row">
+                           <li class="col-12 py-2">
+                              <div class="row">
+                               <i class="fas fa-phone-volume col-3 ico"></i>
+                               <span class="col-9">+201012895020</span>
+                               </div>
+                           </li>
+                           <li class="col-12 py-2">
+                              <div class="row">
+                               <i class="fas fa-envelope-open-text col-3 ico"></i>
+                               <span class="col-9">asmofficial@gmail.com</span>
+                               </div>
+
+                           </li>
+                           <li class="col-12 py-2">
+                              <div class="row">
+                               <i class="fas fa-map-marker-alt col-3 ico"></i>
+                               <span class="col-9"> ShebinElkom 40 Parice Sreet 133/2</span>
+                               </div>
+
+                           </li>
+                           </div>
+                       </ul>
+                   </div>
+               </div>
+
+               <div class="col-lg-3  col-6 py-3">
+                   <div class="account">
+                       <h3 class="pb-3">MY ACCOUNT</h3>
+
+                       <ul class="list-group col-12 list-unstyled">
+                           <li class=""><a href="">Sitemap</a></li>
+                           <li class=""><a href="">Privacy Policy</a></li>
+                           <li class=""><a href="">Your Account</a></li>
+                           <li class=""><a href="">Adanced Search</a></li>
+                           <li class=""><a href="">Contact Us</a></li>
+                       </ul>
+
+                   </div>
+               </div>
+
+               <div class="col-lg-3  col-6 py-3">
+                   <div class="pay-ship">
+                       <h3 class="pb-3">PAYMENT & SHIPPING</h3>
+
+                       <ul class="list-group col-12 list-unstyled">
+                           <li class=""><a href="">Terms Of Use</a></li>
+                           <li class=""><a href="">Payment Method</a></li>
+                           <li class=""><a href="">Locations We Ship To</a></li>
+                           <li class=""><a href="">Shipping Guide</a></li>
+                           <li class=""><a href="">Estimated Delivery Time</a></li>
+                       </ul>
+
+                   </div>
+               </div>
+
+               <div class="col-lg-3 col-6 py-3">
+                   <div class="customr">
+                       <h3 class="pb-3">CUSTOMER SERVICE</h3>
+
+                       <ul class="list-group col-12 list-unstyled">
+                           <li class=""><a href="">Shipping Policy</a></li>
+                           <li class=""><a href="">Compensation First</a></li>
+                           <li class=""><a href="">My Account</a></li>
+                           <li class=""><a href="">Return Policy</a></li>
+                           <li class=""><a href="">Contact Us</a></li>
+                       </ul>
+
+                   </div>
+               </div>
+           </div>
+       </div>
+     </div>
+
+ </footer>
+
+
+
+
+ <script>
+     $(window).on('load',function(){
+         $(".loader").fadeOut(1000);
+
+     });
+ </script>
+
+
+
+
+
+<script src="js/jQuery3.js"></script>
+<script src="js/main.js"></script>
+<script src="js/owl/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script>
+<script src="css/bootstrap/js/bootstrap.min.js"></script>
+<script src="fontawesome/js/all.min.js"></script>
+</body>
+</html>

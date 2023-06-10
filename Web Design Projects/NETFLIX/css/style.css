@@ -1,0 +1,308 @@
+:root {
+--pop-color:#11d6e1;
+  }
+
+@font-face{font-family:'logo'; src:url(../fonts/font/FugazOne-Regular.ttf);}
+@font-face{font-family:'acme'; src:url(../fonts/font/Acme-Regular.ttf);}
+
+@font-face{font-family:'beas'; src:url(../fonts/font/BebasNeue-Regular.ttf);}
+
+/*
+body{
+    background: red;
+}
+*/
+.main {
+    position: relative;
+   height: 754px;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.main .logo{
+        position: absolute;
+    top: 25px;
+    left: 35px;
+
+}
+    
+.main .navs{
+        position: absolute;
+    top: 25px;
+ left: 514px;
+
+}
+.main .navs ul li a{
+   color: #ffffff; 
+}
+
+.main .navs ul li a:hover{
+    color: red;
+}
+
+
+.form-group{
+  position: absolute;
+    top: 25px;
+ left: 1170px;
+  
+}
+
+.form-group input{
+      background: none;
+    border: 0.3px solid #b5b5b5;
+    width: 234px;
+   color: #ffffff;
+    outline: 0;
+    padding-left: 10px;
+}
+.form-group input:focus{
+      border: 0.6px solid #b5b5b5;
+    box-shadow: none;
+}
+
+.form-group input::placeholder{
+    color: #ffffff;
+}
+
+.main .film-name{
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+
+.main .film-name img{
+        width: 35%;
+}
+
+.main .det{
+       position: absolute;
+    top: 370px;
+    left: 170px;
+}
+.main .det ul li a{
+    color:#b5b5b5;
+}
+.main .det ul li {
+   border-right: 1px solid rgba(255,255,255,0.5);
+    padding: 0 10px;
+}
+.main .det ul li:last-child{
+    border-right: none;
+}
+.main .det ul li a:hover{
+    background: red;
+}
+
+.main .par{
+         position: absolute;
+    top: 422px;
+    left: 170px;
+    box-sizing: content-box;
+    width: 640px;
+}
+
+.main .par p{
+    color: #ffffff;
+}
+
+.main .play{
+  position: absolute;
+    top: 610px;
+    left: 170px;
+}
+.main .play a{
+    color: #ffffff;
+    padding: 6px 40px;
+}
+.main .play button:{
+    outline: 0;
+    box-shadow: none;
+    border: 0;
+}
+
+
+.main .watch{
+  position: absolute;
+    top: 680px;
+    left: 170px;
+}
+
+.main .watch a{
+    color:#ffffff;
+    text-decoration: none;
+        font-size: 25px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+ 
+.main .logo{
+        position: absolute;
+    top: 25px;
+    left: 145px;
+
+}
+    
+.main .navs{
+     position: absolute;
+    top: 83px;
+    left: 40px;
+}
+
+
+.form-group{
+  position: absolute;
+    top: 137px;
+    left: 130px;
+  
+}
+    
+.main .film-name{
+    position: absolute;
+    top: 188px;
+    left: 185px;
+}
+.main .det{
+      position: absolute;
+    top: 248px;
+    left: 56px;
+}
+    
+.main .par{
+      position: absolute;
+    top: 309px;
+    left: 9px;
+    box-sizing: content-box;
+    width: 471px;
+}
+
+.main .play{
+  position: absolute;
+    top: 545px;
+    left: 110px;
+}
+.main .watch{
+ position: absolute;
+    top: 606px;
+    left: 135px;
+}
+   
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    
+    .main .navs{
+     position: absolute;
+    top: 80px;
+    left: 85px;
+}
+    .form-group{
+  position: absolute;
+    top: 35px;
+    left: 375px;
+  
+}
+    .main .logo{
+        position: absolute;
+    top: 25px;
+    left: 150px;
+
+}
+      
+.main .film-name{
+    position: absolute;
+    top: 135px;
+    left: 185px;
+}
+.main .det{
+      position: absolute;
+    top: 248px;
+    left: 56px;
+}
+    
+    
+    .main .par{
+      position: absolute;
+    top: 309px;
+    left: 45px;
+    box-sizing: content-box;
+    width: 471px;
+}
+
+.main .play{
+  position: absolute;
+    top: 545px;
+    left: 145px;
+}
+.main .watch{
+ position: absolute;
+    top: 606px;
+    left: 165px;
+}
+  
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .main .navs{
+    position: absolute;
+    top: 13px;
+    left: 252px;
+}
+    .main .form-group{
+ position: absolute;
+    top: 51px;
+    left: 351px;
+  
+}
+    
+    
+    
+    .main .film-name{
+    position: absolute;
+    top: 100px;
+    left: 185px;
+}
+    .main .film-name img{
+        width: 30%;
+    }
+.main .det{
+      position: absolute;
+    top: 248px;
+    left: 56px;
+}
+    
+        .main .par{
+      position: absolute;
+    top: 309px;
+    left: 45px;
+    box-sizing: content-box;
+    width: 471px;
+}
+
+.main .play{
+  position: absolute;
+    top: 545px;
+    left: 145px;
+}
+.main .watch{
+ position: absolute;
+    top: 606px;
+    left: 165px;
+}
+}
+
+
+@media screen and (min-width: 1199px) and (max-width: 1425px) {
+    
+    .main .form-group{
+position: absolute;
+    top: 34px;
+    left: 931px;
+}
+}
+    
+    
+}

@@ -1,0 +1,195 @@
+:root{
+  --main-bg:#89c74a;
+}
+@font-face{font-family:'logo'; src:url(../fonts/font/FugazOne-Regular.ttf);}
+@font-face{font-family:'acme'; src:url(../fonts/font/Acme-Regular.ttf);}
+
+@font-face{font-family:'beas'; src:url(../fonts/font/BebasNeue-Regular.ttf);}
+@font-face{font-family:'one'; src:url(../fonts/font/FugazOne-Regular.ttf);}
+
+
+ 
+
+  .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+     margin-right:0px;
+    margin-left: 0px;
+}
+
+.first-header{
+    margin-top: 30px;
+    
+}
+.first-header h1::first-letter {
+     color: var(--main-bg);
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.first-header h1{
+    font-family:'logo';
+    font-weight: bold;
+}
+
+
+.first-header .navbar-nav {
+    margin-left: 30px;
+    font-family:'beas'; 
+   font-size: 30px;
+}
+.first-header  ul li a{
+    color: #000000;
+}
+.first-header  ul li .active{
+    color:  var(--main-bg);
+}
+.first-header .arrival{
+      margin-left: 45px;
+    margin-top: 5px;
+    
+}
+.first-header .arrival .i {
+    padding-left: 34px;
+    font-size: 48px;
+   cursor: pointer;
+    color: #000000;
+}
+
+
+.first-header .crd{
+         border:none ;
+    position: relative;
+}
+.first-header .crd .num {
+      position: absolute;
+       bottom: 28px;
+    right: 0px;
+    background-color: var(--main-bg);
+    border: 2px;
+    border-radius: 53%;
+    width: 27px;
+    height: 30px;
+    height: 22px;
+    text-align: center;
+}
+
+
+/*
+
+.third-header{
+    margin-top: 20px;
+}
+.third-header .input-group {
+    width:680px;
+    padding: 20px 5px;
+  margin: 0 auto;
+    font-family:'acme';
+}
+.third-header .input-group input{
+    padding: 25px 10px;
+}
+.third-header .input-group button{
+   padding: 13px 10px; 
+}
+.third-header .input-group input:focus{
+    box-shadow: none;
+    border:1px solid var(--main-bg);
+}
+.third-header .input-group button:focus{
+     box-shadow: none; 
+        border:1px solid var(--main-bg);
+}
+*/
+
+
+
+
+.footer .newsletter .news-content h4 span{
+    font-weight: bold;
+    color:  var(--main-color);
+}
+
+.footer .newsletter .news-content p{
+    font-family: unset;
+    color: #898989;
+    font-weight: 100;
+}
+
+.footer .newsletter .news-subscrib{background-color: #fff;}
+.footer .newsletter .news-subscrib input{border-left: 0; }
+.footer .newsletter .news-subscrib .input-group-prepend .input-group-text{
+    border-radius: 0;
+    background-color: #fff;
+    color: var(--pop-color);
+}
+
+.footer .newsletter .news-subscrib .form-control:focus {
+    border-color: var(--main-bg);
+    box-shadow:none;
+    
+}
+.footer .newsletter .news-subscrib button{
+    position: absolute;
+    right: 3px;
+    top: 4px;
+    background-color: var(--main-bg);
+    line-height: 1;
+    border-radius: 3px;
+    color: #fff;
+    z-index: 10;
+}
+.footer .newsletter {
+    background-color: #7c9cfe26;
+    cursor: pointer;
+    z-index: 112;
+
+    
+}
+
+
+    .footer .nav-footer{
+        background-color:#7c9cfe26;
+    }
+.footer .nav-footer h1{
+ 
+font-weight: bold;
+    font-family: logo;
+    text-align: center;
+}
+
+.footer .nav-footer ul li{
+  list-style: none;
+}
+.footer .nav-footer .first-line ul  li a {
+  text-decoration: none;
+  color:var(--main-bg);
+  font-size: 17px;
+  font-family: 'acme';
+}
+
+
+
+.footer .nav-footer .first-line{
+  margin-top: 70px;
+  padding: 0px 120px;
+}
+
+
+.footer .nav-footer p{
+  font-weight: bold;
+  font-size: 30px;
+  font-family: logo;
+  padding: 40px 0px;
+    text-align: center;
+}
+
+
+.footer .nav-footer  h1::first-letter {
+     color: var(--main-bg);
+    font-weight: bold;
+    font-size: 50px;
+}
+

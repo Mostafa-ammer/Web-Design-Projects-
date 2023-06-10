@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="webfont/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section class="header">
+    <div class="first-header">
+        <img src="img/Nagwa-Logo.png" alt="image">
+          </div>  
+       
+<div class="second-header">
+    <div class="container">
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#"><i class="fas fa-video i"></i>Video</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><i class="fas fa-file-pdf i"></i>Explair</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><i class="fas fa-file-video i"></i>PlayList</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " href="#"><i class="fas fa-pen-square i"></i>Training Sheet</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link " href="#"><i class="fas fa-list i"></i>Lesson Plan</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link " href="#"><i class="fas fa-images i"></i>SlideShow</a>
+    </li>
+  </ul>
+</div>
+    
+
+    </div>
+    
+    
+
+    </section>
+    <section class="q">
+        
+        <div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-body">
+          <i class="fas fa-check i"></i>
+        <h3>Correct Answer</h3>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal" onclick="f();">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+          <div class="modal1" id="mysModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-body">
+          <i class="fas fa-times m"></i>
+        <h3>Wrong Answer</h3>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="f1();">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+        
+        
+        
+    <div class="container-fluid">
+        
+        
+        
+        
+        <div class="row">
+        <div class="col-lg-4">
+            <ul class="nav nav-pills">
+  <li class="nav-item col-lg-6">
+    <a class="nav-link active" data-toggle="pill" href="#Q1">Q1</a>
+  </li>
+  <li class="nav-item col-lg-6">
+    <a class="nav-link" data-toggle="pill" href="#Q2">Q2</a>
+  </li>
+  <li class="nav-item col-lg-6">
+    <a class="nav-link" data-toggle="pill" href="#Q3">Q3</a>
+  </li>
+   <li class="nav-item col-lg-6">
+    <a class="nav-link" data-toggle="pill" href="#Q4">Q4</a>
+  </li>
+     <li class="nav-item col-lg-6">
+    <a class="nav-link" data-toggle="pill" href="#Q5">Q5</a>
+  </li>
+    <li class="nav-item col-lg-6">
+    <a class="nav-link" data-toggle="pill" href="#Q6">Q6</a>
+  </li>
+                 <li class="nav-item col-lg-6">
+    <a class="nav-link" data-toggle="pill" href="#Q7">Q7</a>
+  </li>
+    <li class="nav-item col-lg-6">
+    <a class="nav-link" data-toggle="pill" href="#Q8">Q8</a>
+  </li>
+                 <li class="nav-item col-lg-6">
+    <a class="nav-link" data-toggle="pill" href="#Q9">Q9</a>
+  </li>
+    <li class="nav-item col-lg-6">
+    <a class="nav-link" data-toggle="pill" href="#Q10">Q10</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+
+            
+            </div>
+         <div class="col-lg-8">
+            
+            <div class="tab-content">
+                <div class="header">
+                <h1>Training Sheet</h1>
+                <p>second grade secondary</p>
+                    </div>
+                
+  <div class="tab-pane container active" id="Q1">
+                <h4>Q1:Person A chooses a question to start the round.  Person A asks person B the question. Person B answers. OPTIONAL: Everyone in the group can ask follow up questions </h4>
+     
+    <div class="form-check">
+      <label class="form-check-label" for="radio2" id="q">
+        
+        <input type="radio" class="form-check-input" onclick="f();" id="radio2" name="a" value="option1">Correct Question is A
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label" for="radio2" id="q1">
+        <input type="radio" class="form-check-input" id="radio2" onclick="f1();" name="a" value="option2">Correct Question is B
+      </label>
+    </div>
+      <div class="form-check">
+      <label class="form-check-label" for="radio2" id="q1">
+        <input type="radio" class="form-check-input" id="radio2" name="a" onclick="f1();" value="option3">Correct Question is C
+      </label>
+    </div>
+      <div class="form-check">
+      <label class="form-check-label" for="radio2" id="q1">
+        <input type="radio" class="form-check-input" id="radio2" name="a" onclick="f1();" value="option4">Correct Question is D
+      </label>
+    </div>
+      
+                
+      
+           
+                </div>
+  <div class="tab-pane container fade" id="Q2">
+      <h4>Q1:Person A chooses a question to start the round.  Person A asks person B the question. Person B answers. OPTIONAL: Everyone in the group can ask follow up questions </h4>
+                 <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" onclick="f();" name="b" value="option1">Correct Question is A
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="b" onclick="f1();" value="option2">Correct Question is B
+      </label>
+    </div>
+      <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="b"  onclick="f1();" value="option3">Correct Question is C
+      </label>
+    </div>
+      <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="b" onclick="f1();" value="option4">Correct Question is D
+      </label>
+    </div>
+                </div>
+  <div class="tab-pane container fade" id="Q3">
+      <h4>Q1:Person A chooses a question to start the round.  Person A asks person B the question. Person B answers. OPTIONAL: Everyone in the group can ask follow up questions </h4>
+                 <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2"  onclick="f();" name="c" value="option1">Correct Question is A
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="c" onclick="f1();" value="option2">Correct Question is B
+      </label>
+    </div>
+      <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="c" onclick="f1();" value="option3">Correct Question is C
+      </label>
+    </div>
+      <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="c" onclick="f1();" value="option4">Correct Question is D
+      </label>
+    </div>
+                </div>
+                 <div class="tab-pane container " id="Q4">
+                     <h4>Q1:Person A chooses a question to start the round.  Person A asks person B the question. Person B answers. OPTIONAL: Everyone in the group can ask follow up questions </h4>
+                 <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="d" onclick="f();"  value="option1">Correct Question is A
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="d" onclick="f1();" value="option2">Correct Question is B
+      </label>
+    </div>
+      <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="d" onclick="f1();" value="option3">Correct Question is C
+      </label>
+    </div>
+      <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="d" onclick="f1();" value="option4">Correct Question is D
+      </label>
+    </div>
+                </div>
+  <div class="tab-pane container fade" id="Q5">
+      <h4>Q1:Person A chooses a question to start the round.  Person A asks person B the question. Person B answers. OPTIONAL: Everyone in the group can ask follow up questions </h4>
+                 <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="f" onclick="f();" value="option1">Correct Question is A
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="f" onclick="f1();" value="option2">Correct Question is B
+      </label>
+    </div>
+      <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="f" onclick="f1();" value="option3">Correct Question is C
+      </label>
+    </div>
+      <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="f" onclick="f1();" value="option4">Correct Question is D
+      </label>
+    </div>
+                </div>
+  <div class="tab-pane container fade" id="Q6">
+      <h4>Q1:Person A chooses a question to start the round.  Person A asks person B the question. Person B answers. OPTIONAL: Everyone in the group can ask follow up questions </h4>
+                 <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" onclick="f();" name="g" value="option1">Correct Question is A
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="g" onclick="f1();" value="option2">Correct Question is B
+      </label>
+    </div>
+      <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="g" onclick="f1();" value="option3">Correct Question is C
+      </label>
+    </div>
+      <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="g" onclick="f1();" value="option4">Correct Question is D
+      </label>
+    </div>
+                </div>
+                 <div class="tab-pane container " id="Q7">
+                     <h4>Q1:Person A chooses a question to start the round.  Person A asks person B the question. Person B answers. OPTIONAL: Everyone in the group can ask follow up questions </h4>
+                 <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" onclick="f();" name="h" value="option1">Correct Question is A
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="h" onclick="f1();"  value="option2">Correct Question is B
+      </label>
+    </div>
+      <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="h"  onclick="f1();" value="option3">Correct Question is C
+      </label>
+    </div>
+      <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="h" onclick="f1();" value="option4">Correct Question is D
+      </label>
+    </div>
+                </div>
+  <div class="tab-pane container fade" id="Q8">
+      <h4>Q1:Person A chooses a question to start the round.  Person A asks person B the question. Person B answers. OPTIONAL: Everyone in the group can ask follow up questions </h4>
+                 <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" onclick="f();" name="i" value="option1">Correct Question is A
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="i" onclick="f1();"  value="option2">Correct Question is B
+      </label>
+    </div>
+      <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="i" onclick="f1();" value="option3">Correct Question is C
+      </label>
+    </div>
+      <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="i" onclick="f1();" value="option4">Correct Question is D
+      </label>
+    </div>
+                </div>
+  <div class="tab-pane container fade" id="Q9">
+      <h4>Q1:Person A chooses a question to start the round.  Person A asks person B the question. Person B answers. OPTIONAL: Everyone in the group can ask follow up questions </h4>
+                 <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" onclick="f();" name="j" value="option1">Correct Question is A
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="j" onclick="f1();" value="option2">Correct Question is B
+      </label>
+    </div>
+      <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="j" onclick="f1();" value="option3">Correct Question is C
+      </label>
+    </div>
+      <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="j" onclick="f1();"  value="option4">Correct Question is D
+      </label>
+    </div>
+                </div>
+                 <div class="tab-pane container fade" id="Q10">
+                     <h4>Q1:Person A chooses a question to start the round.  Person A asks person B the question. Person B answers. OPTIONAL: Everyone in the group can ask follow up questions </h4>
+                 <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="k" onclick="f();" value="option1">Correct Question is A
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="k" onclick="f1();" value="option2">Correct Question is B
+      </label>
+    </div>
+      <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="k" onclick="f1();" value="option3">Correct Question is C
+      </label>
+    </div>
+      <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="k" onclick="f1();" value="option4">Correct Question is D
+      </label>
+    </div>
+                </div>
+</div>
+            
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+   <script src="js/jQuery3.js"></script>
+  <script src="js/main.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+<script src="css/bootstrap/js/bootstrap.min.js"></script>
+<script src="webfont/fontawesome/js/all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script>
+
+
+  </body>
+  </html>

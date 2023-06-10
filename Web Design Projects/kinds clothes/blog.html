@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog</title>
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="webfont/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/he-fo.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+</head>
+<body>
+
+  <div class="modal" id="Register">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">CREATE  NEW ACCOUNT</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="login">
+                            <div class="form-group">
+                              <label class="p-0">Email address</label>
+                              <input type="email" class="form-control" id="lo-email" autocomplete="off">
+                              <i class="fas fa-at ico"></i>
+                              <p class="m-0 text-danger d-none lo-email"> Pleas Enter Your Email.</p>
+                            </div>
+
+                            <div class="form-group">
+                              <label class="p-0">Password</label>
+                              <input type="password" class="form-control" id="lo-pass">
+                              <i class="fas fa-unlock-alt ico"></i>
+                              <p class="m-0 text-danger d-none lo-pass"> Pleas Enter Your password.</p>
+                            </div>
+
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="remember" style="
+                              padding: 10px 25px">
+                              <label class="custom-control-label" for="remember">Remember Me</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary mt-4 rounded-0">Login</button>
+                            </div>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal" id="SignUp">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">CREATE  SIGN UP</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="register">
+                            <div class="form-group">
+                                <label for="">Name</label>
+                                <input type="text" id="name" class="form-control" autocomplete="off">
+                                <i class="far fa-user ico"></i>
+                                <p class="m-0 text-danger d-none name"> Pleas Enter Your Name.</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Email</label>
+                                <input type="email" id="email" class="form-control" autocomplete="off">
+                                <i class="fas fa-at ico"></i>
+                                <p class="m-0 text-danger d-none email"> Pleas Enter Your Email.</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Password</label>
+                                <input type="password" id="pass" class="form-control" required>
+                                <i class="fas fa-unlock ico"></i>
+                                <p class="m-0 text-danger d-none pass"> Pleas Enter Your Password.</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Re-Password</label>
+                                <input type="password" id="re-pass" class="form-control">
+                                <i id="ico" class="fas fa-undo ico"></i>
+                                <p class="m-0 text-danger d-none re-pass"> This Not Equal Password.</p>
+                            </div>
+                            <div class="m-or-f">
+                                <div class="custom-control custom-radio custom-control-inline male">
+                                    <input type="radio" class="custom-control-input" id="maleRadio" name="radio">
+                                    <label class="custom-control-label" for="maleRadio">Male</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline female">
+                                    <input type="radio" class="custom-control-input" id="femaleRadio" name="radio" value="Male">
+                                    <label class="custom-control-label" for="femaleRadio">Female</label>
+                                </div>
+                                <button type="button"  onclick="lest()" id="signup" class="btn btn-primary mt-4 d-block rounded-0">Sign Up</button>
+
+                            </div>
+                        </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+      </div>
+      </div>
+
+
+    <button class="btn-scroll" id="goup"><i class="fas fa-long-arrow-alt-up"></i></button>
+<section class="first-header">
+<div class="container-fload">
+<div class="row">
+<div class=" col-6 float-left first-paragraph">
+<p>Free Shiping Over $150</p>
+</div>
+
+<div class=" col-6  text-right first-link">
+
+  <div class="row">
+
+    <div class="link-solo">
+<a href="#" class=" col-6 text-decoration-none  text-white"><i class="fas fa-user-alt"></i>log in</a>
+<div class="log_or_create-account ">
+  <ul>
+<li><a href="#" data-toggle="modal" data-target="#SignUp" class=" col-6 text-decoration-none text-dark font-weight-bold">log in</a></li>
+<li><a href="#"  data-toggle="modal"  data-target="#Register" class=" col-6 text-decoration-none text-dark font-weight-bold">create-account</a></li>
+</ul>
+</div>
+</div>
+<div class="dropdown col-6">
+   <a  class=" dropdown-toggle text-decoration-none" data-toggle="dropdown">
+     Usd
+   </a>
+   <div class="dropdown-menu">
+
+     <a class="dropdown-item" href="#">GBp</a>
+     <a class="dropdown-item" href="#">Rup</a>
+     <a class="dropdown-item" href="#">Cny</a>
+ <a class="dropdown-item" href="#">Egy</a>
+  <a class="dropdown-item" href="#">Jby</a>
+  <a class="dropdown-item" href="#">AED</a>
+   </div>
+ </div>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="second-header">
+<div class="container-fload">
+<div class="row">
+<div class="col-lg-3">
+  <div class="logo-word">
+<p class="font-weight-bold">chutti</p>
+</div>
+</div>
+<div class="col-lg-6">
+  <nav class="  navbar navbar-expand-sm  justify-content-center">
+    <ul class="navbar-nav ">
+      <li class="nav-item">
+        <a class="nav-link active " href="./home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="./shop.html">Category</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="./about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="./contact.html">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="./faq.html">FAQ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark " href="#">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="./gallary.html">Gallary</a>
+      </li>
+    </ul>
+  </nav>
+
+
+</div>
+<div class="col-lg-1">
+<div class="cart"><a href="./card.html"><i class="fas fa-cart-arrow-down text-dark"></i></a></div></div>
+<div class="col-lg-1">
+<div class="search"><a href="#" data-toggle="modal" data-target="#myModal"><i class="fas fa-search text-dark "></i></a></div>
+
+
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title font-weight-bold">Start Search</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+
+          <form action="/action_page.php">
+
+  <div class="form-group input">
+
+    <label for="email"></label>
+
+    <input type="text" class="form-control" placeholder="Enter what you search" id="text">
+<div class="icon"><a href="#"><i class="fas fa-search text-dark"></i><a></div>
+  </div>
+
+</form>
+        </div>
+
+        <!-- Modal footer -->
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+</div>
+</div>
+</section>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1>BLOGS</h1>
+
+    <a href="#" class="active">HOME/</a><a href="#">Blog</a>
+  </div>
+</div>
+
+
+<section class="blog">
+<div class="container">
+<div class="row">
+<div class="col-4">
+<img src="./img/blog-4.jpg">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...
+</p>
+<a href="#" class="btn ">READ MORE</a>
+</div>
+<div class="col-4">
+  <img src="./img/blog-13.jpg">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...
+</p>
+<a href="#" class="btn ">READ MORE</a></div>
+<div class="col-4"><img src="./img/blog-9.jpg">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...
+</p>
+<a href="#" class="btn ">READ MORE</a></div>
+<div class="col-4"><img src="./img/blog-5.jpg">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...
+</p>
+<a href="#" class="btn ">READ MORE</a></div>
+<div class="col-4"><img src="./img/blog-10.jpg">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...
+</p>
+<a href="#" class="btn ">READ MORE</a></div>
+<div class="col-4"><img src="./img/blog-14.jpg">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...
+</p>
+<a href="#" class="btn ">READ MORE</a></div>
+<div class="col-4"><img src="./img/blog-12.jpg">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...
+</p>
+<a href="#" class="btn ">READ MORE</a></div>
+<div class="col-4"><img src="./img/blog-15.jpg">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...
+</p>
+<a href="#" class="btn ">READ MORE</a></div>
+<div class="col-4"><img src="./img/blog-16.jpg">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...
+</p>
+<a href="#" class="btn ">READ MORE</a></div>
+</div>
+<ul class="pagination pagination-lg text-center">
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+  </ul>
+</div>
+</section>
+<section class="footer">
+<div class="container">
+  <h1>chutti</h1>
+<div class="first-line">
+  <ul >
+<div class="row ">
+<li class="col-2"><a href="#">HOME</a></li>
+<li class="col-2"><a href="#">ABOUT</a></li>
+<li class="col-2"><a href="#">CONTACT</a></li>
+<li class="col-2"><a href="#">FAQ</a></li>
+<li class="col-2"><a href="#">CATEGORY</a></li>
+<li class="col-2"><a href="#">CARD</a></li>
+</div>
+  </ul>
+
+</div>
+<div class="second-line">
+  <ul >
+<div class="row ">
+<li class="col-2"><a href="#"><i class="fab fa-google-plus-g ic"></i></a></li>
+<li class="col-2"><a href="#"><i class="fab fa-twitter ic"></i></a></li>
+<li class="col-2"><a href="#"><i class="fab fa-instagram-square ic"></i></a></li>
+<li class="col-2"><a href="#"><i class="fab fa-facebook ic"></i></a></li>
+<li class="col-2"><a href="#"><i class="fab fa-facebook-messenger ic"></i></a></li>
+<li class="col-2"><a href="#"><i class="fab fa-whatsapp ic"></i></a></li>
+</div>
+  </ul>
+</div>
+</div>
+<p>© 2019, Powered by Shopify</p>
+</section>
+
+<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+  <script src="js/jQuery3.js"></script>
+  <script src="js/main.js"></script>
+<script src="js/lightbox-plus-jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+  integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+   integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script>
+  <script src="css/bootstrap/js/bootstrap.min.js"></script>
+  <script src="webfont/fontawesome/js/all.min.js"></script>
+  <script src="js/owl/owl.carousel.min.js"></script>
+
+  </body>
+  </html>

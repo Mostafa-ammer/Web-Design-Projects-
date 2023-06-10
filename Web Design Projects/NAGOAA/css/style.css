@@ -1,0 +1,151 @@
+:root {
+--pop-color:#11d6e1;
+  }
+
+@font-face{font-family:'logo'; src:url(../fonts/font/FugazOne-Regular.ttf);}
+@font-face{font-family:'acme'; src:url(../fonts/font/Acme-Regular.ttf);}
+
+@font-face{font-family:'beas'; src:url(../fonts/font/BebasNeue-Regular.ttf);}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.header .first-header,.header .second-header{
+    position: relative;
+}
+.header .first-header img{
+        width: 270px;
+    padding-left: 73px;
+    padding-top: 31px;
+}
+.header .first-header::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 109px;
+    width: 100%;
+    border-bottom: 1px solid #dedede;
+}
+.header .second-header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    position: relative;
+}
+.header .second-header ul li a{
+    color:#797979;
+    padding-left: 35px;
+    transition: border 5s;
+}
+.header .second-header ul li a .i{
+   padding-right: 10px;
+    font-size: 32px;
+    padding-top: inherit;
+}
+.header .second-header ul li{
+    position: relative;
+}
+
+
+.header .second-header::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 90px;
+    width: 100%;
+    border-bottom: 1px solid #dedede;
+}
+
+.header .second-header ul li a:hover::after{
+    
+content: "";
+    position: absolute;
+    left: 22px;
+    top: 66px;
+    width: 90%;
+    border-bottom: none;
+    border-bottom: 5px solid #2196f3;
+}
+.header .second-header ul li a:hover{
+    color: #2196f3;
+}
+
+.q{
+    margin-top: 60px;
+    position: relative;
+}
+.q ul li a{
+    text-align: center;
+}
+.q ul li{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.q .header{
+    margin-left: 20px;
+    
+}
+.q .form-check{
+    
+    padding-bottom: 20px;
+    font-size: 20px;
+    margin-top: 28px;
+}
+
+.q .modal{
+       position: absolute;
+    top: 20%;
+    left: 0%;
+    
+}
+.q .modal1{
+     position: absolute;
+    top: 20%;
+    left: 0%;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+    
+}
+.q .modal.activ{
+display: block;
+}
+
+.q .modal1.activ1{
+display: block;
+}
+
+.q .modal-body{
+ text-align: center;   
+}
+.q .modal-body h3{
+    padding-top: 20px;
+}
+.q .modal-body .i{
+ font-size: 30px;
+    color: green;
+}
+.q .modal-body .m{
+ font-size: 30px;
+    color: red;
+}
+
+.q .activ{
+    color: green;
+}
+
+.q .activ1{
+    color: red;
+}
+.q .modal1{
+    display: none;
+}

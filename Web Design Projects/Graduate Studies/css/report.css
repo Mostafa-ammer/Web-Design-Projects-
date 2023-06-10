@@ -1,0 +1,49 @@
+:root {
+  --pop-color: #007bff;
+  }
+
+@font-face{font-family:'logo'; src:url(../fonts/font/MeriendaOne-Regular.ttf);}
+@font-face{font-family:'pop'; src:url(../fonts/font/Poppins-Regular.ttf);}
+@font-face{font-family:'balo'; src:url(../fonts/font/BalooChettan.ttf);}
+@font-face{font-family:'jose'; src:url(../fonts/font/JosefinSans.ttf);}
+@font-face{font-family:'tenor'; src:url(../fonts/font/TenorSans-Regular.ttf);}
+@font-face{font-family:'made'; src:url(../fonts/font/DancingScript-Regular.ttf);}
+@font-face{font-family:'rrr'; src:url(../fonts/font/OleoScript-Regular.ttf);}
+*{box-sizing: border-box;}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/reporter.jpg);
+   background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    position: relative;
+    
+}
+
+
+.table{
+    margin-top: 30px;
+}
+
+.report{
+    margin-top: 60px;
+}
+
+.table th{
+    font-family: balo;
+    color: #ffffff;
+}
+.table td{
+    font-family: jose;
+    color: #000000;
+}
+
+.report h2{
+    font-family: balo;
+    color: #ffffff;
+}

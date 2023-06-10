@@ -1,0 +1,106 @@
+:root {
+  --pop-color: #89c74a;
+  }
+
+@font-face{font-family:'logo'; src:url(../fonts/font/MeriendaOne-Regular.ttf);}
+@font-face{font-family:'pop'; src:url(../fonts/font/Poppins-Regular.ttf);}
+@font-face{font-family:'balo'; src:url(../fonts/font/BalooChettan.ttf);}
+@font-face{font-family:'jose'; src:url(../fonts/font/JosefinSans.ttf);}
+@font-face{font-family:'tenor'; src:url(../fonts/font/TenorSans-Regular.ttf);}
+@font-face{font-family:'made'; src:url(../fonts/font/DancingScript-Regular.ttf);}
+@font-face{font-family:'rrr'; src:url(../fonts/font/OleoScript-Regular.ttf);}
+*{box-sizing: border-box;}
+
+.first-header{
+    margin-top: 30px;
+    text-align: center;
+    
+}
+
+
+.first-header h1{
+    font-family:'logo';
+    font-weight: bold;
+        text-align: center;
+    color: #423c3c;
+
+}
+.first-header h1::first-letter{
+     color: var(--pop-color);
+}
+
+
+.first-header .navbar-nav {
+    margin-left: -30px;
+    font-family:'jose'; 
+   font-size: 30px;
+}
+.first-header  ul li a{
+    color: #000000;
+    font-weight: bold;
+}
+.first-header  ul li .active{
+    color: var(--pop-color);
+}
+.first-header .arrival{
+      margin-left: 45px;
+    margin-top: 5px;
+    
+}
+.first-header .arrival .i {
+    padding-left: 34px;
+    font-size: 48px;
+   cursor: pointer;
+    color: var(--pop-color);;
+}
+
+
+.first-header .crd{
+         border:none ;
+    position: relative;
+}
+.first-header .crd .num {
+      position: absolute;
+       bottom: 28px;
+    right: 0px;
+    background-color: var(--main-bg);
+    border: 2px;
+    border-radius: 53%;
+    width: 27px;
+    height: 30px;
+    height: 22px;
+    text-align: center;
+}
+
+.first-header .crd span{
+    font-weight: bold;
+}
+.panner{
+    position: relative;
+    background-image: url('../img/home2.jpg');
+    height: 360px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+
+.panner .content {
+    position: absolute;
+    top:50%;
+    left: 36%;
+    text-align: center;
+    align-items: center;
+}
+.panner .content h1{
+    font-weight: bold;
+    font-family: jose;
+}
+
+.panner .content h4{
+    color: var(--pop-color);
+    font-family: jose; 
+     font-weight: bold;
+    margin-top: -12px;
+}

@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="webfont/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/he-fo.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+  <!-- The Modal -->
+
+  <div class="modal" id="Register">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">CREATE  NEW ACCOUNT</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="login">
+                            <div class="form-group">
+                              <label class="p-0">Email address</label>
+                              <input type="email" class="form-control" id="lo-email" autocomplete="off">
+                              <i class="fas fa-at ico"></i>
+                              <p class="m-0 text-danger d-none lo-email"> Pleas Enter Your Email.</p>
+                            </div>
+
+                            <div class="form-group">
+                              <label class="p-0">Password</label>
+                              <input type="password" class="form-control" id="lo-pass">
+                              <i class="fas fa-unlock-alt ico"></i>
+                              <p class="m-0 text-danger d-none lo-pass"> Pleas Enter Your password.</p>
+                            </div>
+
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="remember" style="
+                              padding: 10px 25px">
+                              <label class="custom-control-label" for="remember">Remember Me</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary mt-4 rounded-0">Login</button>
+                            </div>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal" id="SignUp">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">CREATE  SIGN UP</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="register">
+                            <div class="form-group">
+                                <label for="">Name</label>
+                                <input type="text" id="name" class="form-control" autocomplete="off">
+                                <i class="far fa-user ico"></i>
+                                <p class="m-0 text-danger d-none name"> Pleas Enter Your Name.</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Email</label>
+                                <input type="email" id="email" class="form-control" autocomplete="off">
+                                <i class="fas fa-at ico"></i>
+                                <p class="m-0 text-danger d-none email"> Pleas Enter Your Email.</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Password</label>
+                                <input type="password" id="pass" class="form-control" required>
+                                <i class="fas fa-unlock ico"></i>
+                                <p class="m-0 text-danger d-none pass"> Pleas Enter Your Password.</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Re-Password</label>
+                                <input type="password" id="re-pass" class="form-control">
+                                <i id="ico" class="fas fa-undo ico"></i>
+                                <p class="m-0 text-danger d-none re-pass"> This Not Equal Password.</p>
+                            </div>
+                            <div class="m-or-f">
+                                <div class="custom-control custom-radio custom-control-inline male">
+                                    <input type="radio" class="custom-control-input" id="maleRadio" name="radio">
+                                    <label class="custom-control-label" for="maleRadio">Male</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline female">
+                                    <input type="radio" class="custom-control-input" id="femaleRadio" name="radio" value="Male">
+                                    <label class="custom-control-label" for="femaleRadio">Female</label>
+                                </div>
+                                <button type="button"  onclick="lest()" id="signup" class="btn btn-primary mt-4 d-block rounded-0">Sign Up</button>
+
+                            </div>
+                        </div>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+    <button class="btn-scroll" id="goup"><i class="fas fa-long-arrow-alt-up"></i></button>
+<section class="first-header">
+<div class="container-fload">
+<div class="row">
+<div class=" col-6 float-left first-paragraph">
+<p>Free Shiping Over $150</p>
+</div>
+
+<div class=" col-6  text-right first-link">
+
+  <div class="row">
+
+    <div class="link-solo">
+<a href="#" class=" col-6 text-decoration-none  text-white"><i class="fas fa-user-alt"></i>log in</a>
+<div class="log_or_create-account ">
+  <ul>
+<li><a href="#" data-toggle="modal" data-target="#SignUp" class=" col-6 text-decoration-none text-dark font-weight-bold" >log in</a></li>
+<li><a href="#" data-toggle="modal"  data-target="#Register" class=" col-6 text-decoration-none text-dark font-weight-bold">create-account</a></li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+</div>
+</div>
+<div class="dropdown col-6">
+   <a  class=" dropdown-toggle text-decoration-none" data-toggle="dropdown">
+     Usd
+   </a>
+   <div class="dropdown-menu">
+
+     <a class="dropdown-item" href="#">GBp</a>
+     <a class="dropdown-item" href="#">Rup</a>
+     <a class="dropdown-item" href="#">Cny</a>
+ <a class="dropdown-item" href="#">Egy</a>
+  <a class="dropdown-item" href="#">Jby</a>
+  <a class="dropdown-item" href="#">AED</a>
+   </div>
+ </div>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="second-header">
+<div class="container-fload">
+<div class="row">
+<div class="col-lg-3">
+  <div class="logo-word">
+<p class="font-weight-bold">chutti</p>
+</div>
+</div>
+<div class="col-lg-6">
+  <nav class="  navbar navbar-expand-sm  justify-content-center">
+    <ul class="navbar-nav ">
+      <li class="nav-item">
+        <a class="nav-link active " href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="./shop.html">Category</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="./about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="./contact.html">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="./faq.html">FAQ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="./blog.html">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="./gallary.html">Gallary</a>
+      </li>
+    </ul>
+  </nav>
+
+
+</div>
+<div class="col-lg-1">
+<div class="cart"><a href="./card.html"><i class="fas fa-cart-arrow-down text-dark"></i></a></div></div>
+<div class="col-lg-1">
+<div class="search"><a href="#" data-toggle="modal" data-target="#myModal"><i class="fas fa-search text-dark "></i></a></div>
+
+
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title font-weight-bold">Start Search</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+
+          <form action="/action_page.php">
+
+  <div class="form-group input">
+
+    <label for="email"></label>
+
+    <input type="text" class="form-control" placeholder="Enter what you search" id="text">
+<div class="icon"><a href="#"><i class="fas fa-search text-dark"></i><a></div>
+  </div>
+
+</form>
+        </div>
+
+        <!-- Modal footer -->
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+</div>
+</div>
+
+</section>
+
+<section class="slider">
+<div class="container-fload">
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active first-img">
+        <img src="./img/slider-1.jpg" alt="dd">
+        <div class="content">
+<p class="dance">  spices Dresses</p>
+<h1 class="text-white font-weight-bold">Kids Shopping</h1>
+<p class="stright">flat 10% off on order above $50.00</p>
+<a href="#" class=" slide-button animated btn text-white ">SHOP NOW </a>
+        </div>
+      </div>
+       <div class="carousel-item second-img">
+        <img src="./img/slider-2.jpg" alt="dd">
+        <div class="content">
+        <p class="dance">  for little champs</p>
+        <h1 class="font-weight-bold" style="color:#90649b;">SUMMER COLLECTION</h1>
+        <p class="stright">flat 10% off on order above $50.00</p>
+        <a href="#" class=" slide-button animated btn text-white ">SHOP NOW </a>
+
+
+      </div>
+      </div>
+      <div class="carousel-item third-img">
+        <img src="./img/slider-3.jpg" alt="dd">
+        <div class="content">
+
+          <p class="dance">  special kids offer</p>
+          <h1 class=" font-weight-bold" style="color:#fe53bb;">BIG DISCOUNT</h1>
+          <p class="stright">flat 10% off on order above $50.00</p>
+          <a href="#" class=" slide-button animated btn text-white ">SHOP NOW </a>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+     <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+
+  </div>
+
+
+
+
+</div>
+</section>
+<section class="new-arrival">
+<div class="container">
+  <div class="tittle">
+<h1>NEW ARRIVAL</h1>
+</div>
+<div class="row">
+<div class="col-3">
+<div class="cart">
+  <div class="over-lay">
+<img src="./img/kid1.jpg">
+<div class="hover">
+  <div class="row">
+<p class="col-4"><a href="#">XXL</a></p>
+<p class="col-4"><a href="#">M</a></p>
+<p class="col-4"><a href="#">L</a></p>
+</div>
+</div>
+
+<div class="another-img"><img src="./img/kid2.jpg"></div>
+<div class="choose">
+
+  <div class="content">
+    <div class="row">
+<div class="col-3"><i class="far fa-heart icons"></i></div>
+<div class="col-6"><a href="#">Add To Card</a></div>
+<div class="col-3"><i class="fas fa-eye icons"></i></div>
+</div>
+
+</div>
+</div>
+</div>
+<div class="inside">
+<h6>Sleeveless Flower Printed Tshirt</h6>
+<p>Nam tempus turpis at metus scelerisque placerat...</p>
+<h4>$625.00</h4>
+
+<div class="prod-rate">
+
+    <i class="far fa-star i"></i>
+    <i class="far fa-star i"></i>
+    <i class="far fa-star i"></i>
+    <i class="far fa-star i"></i>
+    <i class="far fa-star i"></i>
+
+ </div>
+
+
+</div>
+</div>
+</div>
+<div class="col-3">
+  <div class="cart">
+    <div class="over-lay">
+  <img src="./img/kid2.jpg">
+  <div class="hover">
+    <div class="row">
+  <p class="col-4"><a href="#">XXL</a></p>
+  <p class="col-4"><a href="#">M</a></p>
+  <p class="col-4"><a href="#">L</a></p>
+  </div>
+  </div>
+
+  <div class="another-img"><img src="./img/kid4.jpg"></div>
+  <div class="choose">
+
+    <div class="content">
+      <div class="row">
+  <div class="col-3"><i class="far fa-heart icons"></i></div>
+  <div class="col-6"><a href="#">Add To Card</a></div>
+  <div class="col-3"><i class="fas fa-eye icons"></i></div>
+  </div>
+
+  </div>
+  </div>
+  </div>
+  <div class="inside">
+  <h6>Girl's Net Gown Dress</h6>
+  <p>Nam tempus turpis at metus scelerisque placerat...</p>
+  <h4>$465.00</h4>
+
+  <div class="prod-rate">
+
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+
+   </div>
+
+
+  </div>
+  </div>
+</div>
+<div class="col-3">
+  <div class="cart">
+    <div class="over-lay">
+  <img src="./img/kid4.jpg">
+  <div class="hover">
+    <div class="row">
+  <p class="col-4"><a href="#">XXL</a></p>
+  <p class="col-4"><a href="#">M</a></p>
+  <p class="col-4"><a href="#">L</a></p>
+  </div>
+  </div>
+
+  <div class="another-img"><img src="./img/kid6.jpg"></div>
+  <div class="choose">
+
+    <div class="content">
+      <div class="row">
+  <div class="col-3"><i class="far fa-heart icons"></i></div>
+  <div class="col-6"><a href="#">Add To Card</a></div>
+  <div class="col-3"><i class="fas fa-eye icons"></i></div>
+  </div>
+
+  </div>
+  </div>
+  </div>
+  <div class="inside">
+  <h6>Regular Plain Fit Shirt</h6>
+  <p>Nam tempus turpis at metus scelerisque placerat...</p>
+  <h4>$325.00</h4>
+
+  <div class="prod-rate">
+
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+
+   </div>
+
+
+  </div>
+  </div>
+</div>
+<div class="col-3">
+  <div class="cart">
+    <div class="over-lay">
+  <img src="./img/kid7.jpg">
+  <div class="hover">
+    <div class="row">
+  <p class="col-4"><a href="#">XXL</a></p>
+  <p class="col-4"><a href="#">M</a></p>
+  <p class="col-4"><a href="#">L</a></p>
+  </div>
+  </div>
+
+  <div class="another-img"><img src="./img/kid2.jpg"></div>
+  <div class="choose">
+
+    <div class="content">
+      <div class="row">
+  <div class="col-3"><i class="far fa-heart icons"></i></div>
+  <div class="col-6"><a href="#">Add To Card</a></div>
+  <div class="col-3"><i class="fas fa-eye icons"></i></div>
+  </div>
+
+  </div>
+  </div>
+  </div>
+  <div class="inside">
+  <h6>Light Cotton Sleeveless Dress</h6>
+  <p>Nam tempus turpis at metus scelerisque placerat...</p>
+  <h4>$525.00</h4>
+
+  <div class="prod-rate">
+
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+
+   </div>
+
+
+  </div>
+  </div>
+</div>
+
+
+</div>
+</div>
+</section>
+
+<section class="present">
+<div class="container-fload">
+<div class="row " style="margin-bottom: -208px;">
+
+<div class="col-4 aline">
+
+  <img src="./img/stykish.jpg">
+
+<div class="over-content">
+<p>Collection</p>
+<h2> For Kids</h2>
+<a href="#" class="btn btn-primary ">Shop Now</a>
+
+</div>
+
+</div>
+<div class="col-8">
+<div class="row">
+<div class="col-4 aline1"><img src="./img/stykish1.jpg">
+
+<div class="over-content1">
+
+  <p>Collection</p>
+  <h2> For Kids</h2>
+  <a href="#" class="btn btn-primary ">Shop Now</a>
+
+</div>
+
+</div>
+<div class="col-8 aline2"><img src="./img/stykish2.jpg">
+  <div class="over-content2">
+
+    <p>Summer</p>
+    <h2> NEW ARRIVAL</h2>
+    <a href="#" class="btn btn-primary ">Shop Now</a>
+
+  </div>
+
+</div>
+<div class="col-8 aline3"><img src="./img/stykish3.jpg">
+  <div class="over-content3">
+
+    <p>Collection</p>
+    <h2> For BOYS AND GIRLS</h2>
+    <a href="#" class="btn btn-primary ">Shop Now</a>
+
+  </div>
+
+</div>
+<div class="col-4 aline4"><img src="./img/stykish4.jpg">
+
+  <div class="over-content4">
+
+    <p>New Arrivals</p>
+    <h2> For BOYS</h2>
+    <a href="#" class="btn btn-primary ">Shop Now</a>
+
+  </div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+</section>
+</section>
+<section class="new-arrival">
+<div class="container">
+  <div class="tittle">
+<h1>NEW ARRIVAL</h1>
+</div>
+<div class="row">
+<div class="col-3">
+<div class="cart">
+  <div class="over-lay">
+<img src="./img/kid1.jpg">
+<div class="hover">
+  <div class="row">
+<p class="col-4"><a href="#">XXL</a></p>
+<p class="col-4"><a href="#">M</a></p>
+<p class="col-4"><a href="#">L</a></p>
+</div>
+</div>
+
+<div class="another-img"><img src="./img/kid2.jpg"></div>
+<div class="choose">
+
+  <div class="content">
+    <div class="row">
+<div class="col-3"><i class="far fa-heart icons"></i></div>
+<div class="col-6"><a href="#">Add To Card</a></div>
+<div class="col-3"><i class="fas fa-eye icons"></i></div>
+</div>
+
+</div>
+</div>
+</div>
+<div class="inside">
+<h6>Sleeveless Flower Printed Tshirt</h6>
+<p>Nam tempus turpis at metus scelerisque placerat...</p>
+<h4>$625.00</h4>
+
+<div class="prod-rate">
+
+    <i class="far fa-star i"></i>
+    <i class="far fa-star i"></i>
+    <i class="far fa-star i"></i>
+    <i class="far fa-star i"></i>
+    <i class="far fa-star i"></i>
+
+ </div>
+
+
+</div>
+</div>
+</div>
+<div class="col-3">
+  <div class="cart">
+    <div class="over-lay">
+  <img src="./img/kid2.jpg">
+  <div class="hover">
+    <div class="row">
+  <p class="col-4"><a href="#">XXL</a></p>
+  <p class="col-4"><a href="#">M</a></p>
+  <p class="col-4"><a href="#">L</a></p>
+  </div>
+  </div>
+
+  <div class="another-img"><img src="./img/kid4.jpg"></div>
+  <div class="choose">
+
+    <div class="content">
+      <div class="row">
+  <div class="col-3"><i class="far fa-heart icons"></i></div>
+  <div class="col-6"><a href="#">Add To Card</a></div>
+  <div class="col-3"><i class="fas fa-eye icons"></i></div>
+  </div>
+
+  </div>
+  </div>
+  </div>
+  <div class="inside">
+  <h6>Girl's Net Gown Dress</h6>
+  <p>Nam tempus turpis at metus scelerisque placerat...</p>
+  <h4>$465.00</h4>
+
+  <div class="prod-rate">
+
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+
+   </div>
+
+
+  </div>
+  </div>
+</div>
+<div class="col-3">
+  <div class="cart">
+    <div class="over-lay">
+  <img src="./img/kid4.jpg">
+  <div class="hover">
+    <div class="row">
+  <p class="col-4"><a href="#">XXL</a></p>
+  <p class="col-4"><a href="#">M</a></p>
+  <p class="col-4"><a href="#">L</a></p>
+  </div>
+  </div>
+
+  <div class="another-img"><img src="./img/kid6.jpg"></div>
+  <div class="choose">
+
+    <div class="content">
+      <div class="row">
+  <div class="col-3"><i class="far fa-heart icons"></i></div>
+  <div class="col-6"><a href="#">Add To Card</a></div>
+  <div class="col-3"><i class="fas fa-eye icons"></i></div>
+  </div>
+
+  </div>
+  </div>
+  </div>
+  <div class="inside">
+  <h6>Regular Plain Fit Shirt</h6>
+  <p>Nam tempus turpis at metus scelerisque placerat...</p>
+  <h4>$325.00</h4>
+
+  <div class="prod-rate">
+
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+
+   </div>
+
+
+  </div>
+  </div>
+</div>
+<div class="col-3">
+  <div class="cart">
+    <div class="over-lay">
+  <img src="./img/kid7.jpg">
+  <div class="hover">
+    <div class="row">
+  <p class="col-4"><a href="#">XXL</a></p>
+  <p class="col-4"><a href="#">M</a></p>
+  <p class="col-4"><a href="#">L</a></p>
+  </div>
+  </div>
+
+  <div class="another-img"><img src="./img/kid2.jpg"></div>
+  <div class="choose">
+
+    <div class="content">
+      <div class="row">
+  <div class="col-3"><i class="far fa-heart icons"></i></div>
+  <div class="col-6"><a href="#">Add To Card</a></div>
+  <div class="col-3"><i class="fas fa-eye icons"></i></div>
+  </div>
+
+  </div>
+  </div>
+  </div>
+  <div class="inside">
+  <h6>Light Cotton Sleeveless Dress</h6>
+  <p>Nam tempus turpis at metus scelerisque placerat...</p>
+  <h4>$525.00</h4>
+
+  <div class="prod-rate">
+
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+
+   </div>
+
+
+  </div>
+  </div>
+</div>
+
+
+<div class="col-3">
+  <div class="cart">
+    <div class="over-lay">
+  <img src="./img/kid11.jpg">
+  <div class="hover">
+    <div class="row">
+  <p class="col-4"><a href="#">XXL</a></p>
+  <p class="col-4"><a href="#">M</a></p>
+  <p class="col-4"><a href="#">L</a></p>
+  </div>
+  </div>
+
+  <div class="another-img"><img src="./img/kid12.jpg"></div>
+  <div class="choose">
+
+    <div class="content">
+      <div class="row">
+  <div class="col-3"><i class="far fa-heart icons"></i></div>
+  <div class="col-6"><a href="#">Add To Card</a></div>
+  <div class="col-3"><i class="fas fa-eye icons"></i></div>
+  </div>
+
+  </div>
+  </div>
+  </div>
+  <div class="inside">
+  <h6>Light Cotton Sleeveless Dress</h6>
+  <p>Nam tempus turpis at metus scelerisque placerat...</p>
+  <h4>$525.00</h4>
+
+  <div class="prod-rate">
+
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+
+   </div>
+
+
+  </div>
+  </div>
+</div>
+
+<div class="col-3">
+  <div class="cart">
+    <div class="over-lay">
+  <img src="./img/kid10.jpg">
+  <div class="hover">
+    <div class="row">
+  <p class="col-4"><a href="#">XXL</a></p>
+  <p class="col-4"><a href="#">M</a></p>
+  <p class="col-4"><a href="#">L</a></p>
+  </div>
+  </div>
+
+  <div class="another-img"><img src="./img/kid2.jpg"></div>
+  <div class="choose">
+
+    <div class="content">
+      <div class="row">
+  <div class="col-3"><i class="far fa-heart icons"></i></div>
+  <div class="col-6"><a href="#">Add To Card</a></div>
+  <div class="col-3"><i class="fas fa-eye icons"></i></div>
+  </div>
+
+  </div>
+  </div>
+  </div>
+  <div class="inside">
+  <h6>Light Cotton Sleeveless Dress</h6>
+  <p>Nam tempus turpis at metus scelerisque placerat...</p>
+  <h4>$525.00</h4>
+
+  <div class="prod-rate">
+
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+
+   </div>
+
+
+  </div>
+  </div>
+</div>
+
+<div class="col-3">
+  <div class="cart">
+    <div class="over-lay">
+  <img src="./img/kid9.jpg">
+  <div class="hover">
+    <div class="row">
+  <p class="col-4"><a href="#">XXL</a></p>
+  <p class="col-4"><a href="#">M</a></p>
+  <p class="col-4"><a href="#">L</a></p>
+  </div>
+  </div>
+
+  <div class="another-img"><img src="./img/kid2.jpg"></div>
+  <div class="choose">
+
+    <div class="content">
+      <div class="row">
+  <div class="col-3"><i class="far fa-heart icons"></i></div>
+  <div class="col-6"><a href="#">Add To Card</a></div>
+  <div class="col-3"><i class="fas fa-eye icons"></i></div>
+  </div>
+
+  </div>
+  </div>
+  </div>
+  <div class="inside">
+  <h6>Light Cotton Sleeveless Dress</h6>
+  <p>Nam tempus turpis at metus scelerisque placerat...</p>
+  <h4>$525.00</h4>
+
+  <div class="prod-rate">
+
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+
+   </div>
+
+
+  </div>
+  </div>
+</div>
+
+<div class="col-3">
+  <div class="cart">
+    <div class="over-lay">
+  <img src="./img/kid8.jpg">
+  <div class="hover">
+    <div class="row">
+  <p class="col-4"><a href="#">XXL</a></p>
+  <p class="col-4"><a href="#">M</a></p>
+  <p class="col-4"><a href="#">L</a></p>
+  </div>
+  </div>
+
+  <div class="another-img"><img src="./img/kid2.jpg"></div>
+  <div class="choose">
+
+    <div class="content">
+      <div class="row">
+  <div class="col-3"><i class="far fa-heart icons"></i></div>
+  <div class="col-6"><a href="#">Add To Card</a></div>
+  <div class="col-3"><i class="fas fa-eye icons"></i></div>
+  </div>
+
+  </div>
+  </div>
+  </div>
+  <div class="inside">
+  <h6>Light Cotton Sleeveless Dress</h6>
+  <p>Nam tempus turpis at metus scelerisque placerat...</p>
+  <h4>$525.00</h4>
+
+  <div class="prod-rate">
+
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+      <i class="far fa-star i"></i>
+
+   </div>
+
+
+  </div>
+  </div>
+</div>
+
+
+
+
+</div>
+</div>
+</section>
+
+<section class="forBig">
+<div class="container-fload">
+<div class="row">
+<div class="col-8">
+<h2>The Biggest Kids Fashion Store</h2>
+<p>Shopping for your kids’ clothe? The best places for good quality and affordable children's clothes.</p>
+</div>
+<div class="col-4">
+<a href="#" class="btn  ">Shop Now</a>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="top">
+<div class="container">
+<div class="row">
+<div class="col-4 part-small">
+<h2>top related</h2>
+  <div class="owl-carousel owl-theme top-related">
+      <div class="item ">
+<img src="./img/kid11.jpg">
+        <h6>Light Cotton Sleeveless Dress</h6>
+
+      <h4>$525.00</h4>
+
+      <div class="prod-rate">
+
+          <i class="far fa-star i"></i>
+          <i class="far fa-star i"></i>
+          <i class="far fa-star i"></i>
+          <i class="far fa-star i"></i>
+          <i class="far fa-star i"></i>
+
+       </div></div>
+      <div class="item"><img src="./img/kid12.jpg">
+              <h6>Light Cotton Sleeveless Dress</h6>
+
+            <h4>$525.00</h4>
+
+            <div class="prod-rate">
+
+                <i class="far fa-star i"></i>
+                <i class="far fa-star i"></i>
+                <i class="far fa-star i"></i>
+                <i class="far fa-star i"></i>
+                <i class="far fa-star i"></i>
+
+             </div></div>
+      <div class="item"><img src="./img/kid4.jpg">
+              <h6>Light Cotton Sleeveless Dress</h6>
+
+            <h4>$525.00</h4>
+
+            <div class="prod-rate">
+
+                <i class="far fa-star i"></i>
+                <i class="far fa-star i"></i>
+                <i class="far fa-star i"></i>
+                <i class="far fa-star i"></i>
+                <i class="far fa-star i"></i>
+
+             </div></div>
+      <div class="item"><img src="./img/kid3.jpg">
+              <h6>Light Cotton Sleeveless Dress</h6>
+
+            <h4>$525.00</h4>
+
+            <div class="prod-rate">
+
+                <i class="far fa-star i"></i>
+                <i class="far fa-star i"></i>
+                <i class="far fa-star i"></i>
+                <i class="far fa-star i"></i>
+                <i class="far fa-star i"></i>
+
+             </div></div>
+      <div class="item"><img src="./img/kid1.jpg">
+              <h6>Light Cotton Sleeveless Dress</h6>
+
+            <h4>$525.00</h4>
+
+            <div class="prod-rate">
+
+                <i class="far fa-star i"></i>
+                <i class="far fa-star i"></i>
+                <i class="far fa-star i"></i>
+                <i class="far fa-star i"></i>
+                <i class="far fa-star i"></i>
+
+             </div></div>
+      <div class="item"><img src="./img/kid2.jpg">
+              <h6>Light Cotton Sleeveless Dress</h6>
+
+            <h4>$525.00</h4>
+
+            <div class="prod-rate">
+
+                <i class="far fa-star i"></i>
+                <i class="far fa-star i"></i>
+                <i class="far fa-star i"></i>
+                <i class="far fa-star i"></i>
+                <i class="far fa-star i"></i>
+
+             </div></div>
+
+  </div>
+
+</div>
+<div class="col-8">
+<div class="right-img">
+<img src="./img/fly.jpg">
+<div class="img-content">
+  <h2> For Kids & Girl</h2>
+    <p>12-15 YEARS</p>
+  <a href="#" class="btn btn-primary ">Shop Now</a>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="opinion">
+<div class="container-fload">
+<div class="row">
+<div class="col-2"><img src="./img/move1.png"></div>
+<div class="col-8 work">
+  <div class="title">
+  <h3>WHAT CUSTOMERS SAY</h3></div>
+  <div class="owl-carousel owl-theme say">
+      <div class="item">
+<p>I just wanted you to know that we absolutely loved the dress.  When we received the dress,
+   I was shocked at how beautiful it was.  It had such amazing beading and lace and the design was so amazing.
+    On the day my daughter wore it she looked like an angel.</p>
+
+<h2>MARIAM</h2>
+<SPAN>MONTH OF 30 YEARS OLD</SPAN>
+      </div>
+      <div class="item"><p>I just wanted you to know that we absolutely loved the dress.  When we received the dress,
+         I was shocked at how beautiful it was.  It had such amazing beading and lace and the design was so amazing.
+          On the day my daughter wore it she looked like an angel.</p>
+
+      <h2>IOHN BIRG</h2>
+      <SPAN>MONTH OF 5 YEARS OLD</SPAN></div>
+      <div class="item"><p>I just wanted you to know that we absolutely loved the dress.  When we received the dress,
+         I was shocked at how beautiful it was.  It had such amazing beading and lace and the design was so amazing.
+          On the day my daughter wore it she looked like an angel.</p>
+
+      <h2>MARTIN</h2>
+      <SPAN>MONTH OF 20 YEARS OLD</SPAN></div>
+      <div class="item"><p>I just wanted you to know that we absolutely loved the dress.  When we received the dress,
+         I was shocked at how beautiful it was.  It had such amazing beading and lace and the design was so amazing.
+          On the day my daughter wore it she looked like an angel.</p>
+
+      <h2>ANGLINA</h2>
+      <SPAN>MONTH OF 10 YEARS OLD</SPAN></div>
+      <div class="item"><p>I just wanted you to know that we absolutely loved the dress.  When we received the dress,
+         I was shocked at how beautiful it was.  It had such amazing beading and lace and the design was so amazing.
+          On the day my daughter wore it she looked like an angel.</p>
+
+      <h2>AKSHEKO</h2>
+      <SPAN>MONTH OF 15 YEARS OLD</SPAN></div>
+
+
+  </div>
+
+</div>
+<div class="col-2"><img src="./img/move2.png"></div>
+
+</div>
+</div>
+</section>
+
+<section class="subscribe">
+<div class="container">
+
+<h1>   Subscribe to Newsletter</h1>
+<p>Sigh up For Newsletter</p>
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Search">
+  <div class="input-group-append">
+    <button class="btn btn-dark text-white font-weight-bold" type="submit">Go</button>
+  </div>
+</div>
+
+
+
+</div>
+</section>
+<div class="brands">
+    <div class="container">
+       <!--slider img brands by owl carousel-->
+        <div class="owl-carousel owl-theme brand">
+            <div class="item"><img src="img/Brands/prand1.png" alt=""></div>
+            <div class="item"><img src="img/Brands/prand2.png" alt=""></div>
+            <div class="item"><img src="img/Brands/prand3.png" alt=""></div>
+            <div class="item"><img src="img/Brands/prand4.png" alt=""></div>
+            <div class="item"><img src="img/Brands/prand5.png" alt=""></div>
+            <div class="item"><img src="img/Brands/prand1.png" alt=""></div>
+
+        </div>
+    </div>
+</div>
+<section class="footer">
+<div class="container">
+  <h1>chutti</h1>
+<div class="first-line">
+  <ul >
+<div class="row ">
+<li class="col-2"><a href="#">HOME</a></li>
+<li class="col-2"><a href="#">ABOUT</a></li>
+<li class="col-2"><a href="#">CONTACT</a></li>
+<li class="col-2"><a href="#">FAQ</a></li>
+<li class="col-2"><a href="#">CATEGORY</a></li>
+<li class="col-2"><a href="#">CARD</a></li>
+</div>
+  </ul>
+
+</div>
+<div class="second-line">
+  <ul >
+<div class="row ">
+<li class="col-2"><a href="#"><i class="fab fa-google-plus-g ic"></i></a></li>
+<li class="col-2"><a href="#"><i class="fab fa-twitter ic"></i></a></li>
+<li class="col-2"><a href="#"><i class="fab fa-instagram-square ic"></i></a></li>
+<li class="col-2"><a href="#"><i class="fab fa-facebook ic"></i></a></li>
+<li class="col-2"><a href="#"><i class="fab fa-facebook-messenger ic"></i></a></li>
+<li class="col-2"><a href="#"><i class="fab fa-whatsapp ic"></i></a></li>
+</div>
+  </ul>
+</div>
+</div>
+<p>© 2019, Powered by Shopify</p>
+</section>
+
+<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+  <script src="js/jQuery3.js"></script>
+  <script src="js/main.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+  integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+   integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script>
+  <script src="css/bootstrap/js/bootstrap.min.js"></script>
+  <script src="webfont/fontawesome/js/all.min.js"></script>
+  <script src="js/owl/owl.carousel.min.js"></script>
+
+  </body>
+  </html>

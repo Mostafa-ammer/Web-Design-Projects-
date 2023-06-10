@@ -1,0 +1,11 @@
+:root{
+  --main-bg:#89c74a;
+}
+@font-face{font-family:'logo'; src:url(../fonts/font/FugazOne-Regular.ttf);}
+@font-face{font-family:'acme'; src:url(../fonts/font/Acme-Regular.ttf);}
+
+@font-face{font-family:'beas'; src:url(../fonts/font/BebasNeue-Regular.ttf);}
+@font-face{font-family:'one'; src:url(../fonts/font/FugazOne-Regular.ttf);}
+
+
+
